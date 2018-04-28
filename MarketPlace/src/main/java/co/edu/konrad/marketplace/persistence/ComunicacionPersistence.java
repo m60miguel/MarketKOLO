@@ -28,7 +28,7 @@ public class ComunicacionPersistence {
      * @return Lista de datos de la tabla Comunicacion
      */
     public List<ComunicacionEntity> findAll(){
-        Query todos = em.createQuery("select e from ComunicacionEntity e");
+        Query todos = em.createQuery("select e from Comunicacion e");
         return todos.getResultList();
     }
     

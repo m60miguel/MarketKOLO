@@ -18,7 +18,7 @@ import javax.persistence.ManyToOne;
  *
  * @author DarkFACS
  */
-@Entity
+@Entity (name = "DatosFinancieros")
 public class DatosFinancierosEntity implements Serializable {
     
     /**
@@ -30,9 +30,9 @@ public class DatosFinancierosEntity implements Serializable {
      * Llave primaria de la Entidad DatosFinancieros
      */
     @Id
-    @Column (name = "id_proveedor", unique = true)
+    @Column (name = "id_dFinancieros", nullable = false)
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long idProveedor;
+    private Long iddFinancieros;
     
     /**
      * Variable que almacena las ventas anuales
@@ -56,16 +56,12 @@ public class DatosFinancierosEntity implements Serializable {
     @JoinColumn (name = "id_proveedor")
     private ProveedorEntity proveedor;
 
-    /**
-     * Metodos GET Y SET
-     */
-    
-    public Long getIdProveedor() {
-        return idProveedor;
+    public Long getIddFinancieros() {
+        return iddFinancieros;
     }
 
-    public void setIdProveedor(Long idProveedor) {
-        this.idProveedor = idProveedor;
+    public void setIddFinancieros(Long iddFinancieros) {
+        this.iddFinancieros = iddFinancieros;
     }
 
     public int getVentasAnuales() {
@@ -99,4 +95,10 @@ public class DatosFinancierosEntity implements Serializable {
     public void setProveedor(ProveedorEntity proveedor) {
         this.proveedor = proveedor;
     }
+
+    /**
+     * Metodos GET Y SET
+     */
+    
+    
 }

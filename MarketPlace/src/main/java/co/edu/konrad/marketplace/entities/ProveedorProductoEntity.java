@@ -18,7 +18,7 @@ import javax.persistence.ManyToOne;
  *
  * @author DarkFACS
  */
-@Entity
+@Entity (name = "ProveedorProducto")
 public class ProveedorProductoEntity implements Serializable {
     
     /**
@@ -30,20 +30,20 @@ public class ProveedorProductoEntity implements Serializable {
      * Llave primaria de la Entidad ProveedorProducto
      */
     @Id
-    @Column (name = "id_comunicacion", unique = true)
+    @Column (name = "id_pProducto", nullable = false)
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long idProveedorProducto;
     
     /**
      * Variable que almacena el tipo del comunicacion
      */
-    @Column (name = "tipo_comunicacion", nullable = false)
+    @Column (name = "tipo_pProducto", nullable = false)
     private String tipoProveedorProducto;
     
     /**
      * Variable que almacena la descripcion del tipo de comunicacion
      */
-    @Column (name = "descripcion_comunicacion")
+    @Column (name = "descripcion_pProducto")
     private String descripcionProveedorProducto;
 
     @ManyToOne
@@ -56,6 +56,7 @@ public class ProveedorProductoEntity implements Serializable {
 
     /**
      * Metodos GET Y SET
+     * @return 
      */
     
     public Long getIdProveedorProducto() {

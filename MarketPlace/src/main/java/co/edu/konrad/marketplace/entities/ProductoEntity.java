@@ -13,12 +13,14 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.NamedQuery;
 
 /**
  *
  * @author DarkFACS
  */
-@Entity
+@Entity (name = "Producto")
+@NamedQuery (name = "Producto.findByName", query = "select p from Producto p where p.nombreProducto = :nombre")
 public class ProductoEntity implements Serializable {
     
     /**
@@ -30,7 +32,7 @@ public class ProductoEntity implements Serializable {
      * Llave primaria de la Entidad Producto
      */
     @Id
-    @Column (name = "id_producto", unique = true)
+    @Column (name = "id_producto", nullable = false)
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long idProducto;
     
@@ -64,6 +66,7 @@ public class ProductoEntity implements Serializable {
 
     /**
      * Metodos GET Y SET
+     * @return 
      */
     
     public Long getIdProducto() {

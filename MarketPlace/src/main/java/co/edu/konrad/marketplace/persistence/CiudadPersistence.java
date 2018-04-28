@@ -28,7 +28,7 @@ public class CiudadPersistence {
      * @return Lista de datos de la tabla Ciudad
      */
     public List<CiudadEntity> findAll(){
-        Query todos = em.createQuery("select e from CiudadEntity e");
+        Query todos = em.createQuery("select e from Ciudad e");
         return todos.getResultList();
     }
     

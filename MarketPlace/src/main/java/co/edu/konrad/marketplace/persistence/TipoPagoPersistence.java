@@ -28,7 +28,7 @@ public class TipoPagoPersistence {
      * @return Lista de datos de la tabla TipoPago
      */
     public List<TipoPagoEntity> findAll(){
-        Query todos = em.createQuery("select e from TipoPagoEntity e");
+        Query todos = em.createQuery("select e from TipoPago e");
         return todos.getResultList();
     }
     

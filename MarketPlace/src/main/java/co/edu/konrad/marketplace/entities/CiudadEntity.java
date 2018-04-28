@@ -13,12 +13,14 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.NamedQuery;
 
 /**
  *
  * @author DarkFACS
  */
-@Entity
+@Entity (name = "Ciudad")
+@NamedQuery (name = "Ciudad.findByName", query = "select c from Ciudad c where c.nombreCiudad = :nombre")
 public class CiudadEntity implements Serializable {
     
     /**
@@ -30,7 +32,7 @@ public class CiudadEntity implements Serializable {
      * Llave primaria de la Entidad Ciudad
      */
     @Id
-    @Column (name = "id_ciudad", unique = true)
+    @Column (name = "id_ciudad", nullable = false)
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long idCiudad;
     
@@ -52,6 +54,7 @@ public class CiudadEntity implements Serializable {
 
     /**
      * Metodos GET Y SET
+     * @return idCiudad
      */
     
     public Long getIdCiudad() {

@@ -28,7 +28,7 @@ public class EvaluacionPersistence {
      * @return Lista de datos de la tabla Evaluacion
      */
     public List<EvaluacionEntity> findAll(){
-        Query todos = em.createQuery("select e from EvaluacionEntity e");
+        Query todos = em.createQuery("select e from Evaluacion e");
         return todos.getResultList();
     }
     

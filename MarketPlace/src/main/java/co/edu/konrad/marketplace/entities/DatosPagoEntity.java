@@ -6,7 +6,6 @@
 package co.edu.konrad.marketplace.entities;
 
 import java.io.Serializable;
-import java.util.Date;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -14,14 +13,12 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
 
 /**
  *
  * @author DarkFACS
  */
-@Entity
+@Entity (name = "DatosPago")
 public class DatosPagoEntity implements Serializable {
     
     /**
@@ -33,7 +30,7 @@ public class DatosPagoEntity implements Serializable {
      * Llave primaria de la Entidad DatosPago
      */
     @Id
-    @Column (name = "id_cliente", unique = true)
+    @Column (name = "id_dPago", nullable = false)
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long idDatosPago;
     
@@ -77,6 +74,7 @@ public class DatosPagoEntity implements Serializable {
 
     /**
      * Metodos GET Y SET
+     * @return idDatosPago
      */
     
     public Long getIdDatosPago() {

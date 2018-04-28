@@ -16,7 +16,7 @@ import javax.persistence.Id;
  *
  * @author DarkFACS
  */
-@Entity
+@Entity (name = "TipoProducto")
 public class TipoProductoEntity implements Serializable {
     
     /**
@@ -28,7 +28,7 @@ public class TipoProductoEntity implements Serializable {
      * Llave primaria de la Entidad TipoProducto
      */
     @Id
-    @Column (name = "id_tProducto", unique = true)
+    @Column (name = "id_tProducto", nullable = false)
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long idTProducto;
     
@@ -46,6 +46,7 @@ public class TipoProductoEntity implements Serializable {
 
     /**
      * Metodos GET Y SET
+     * @return 
      */
     
     public Long getIdTProducto() {

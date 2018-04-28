@@ -14,6 +14,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.NamedQuery;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
@@ -21,7 +22,8 @@ import javax.persistence.TemporalType;
  *
  * @author DarkFACS
  */
-@Entity
+@Entity (name = "Cliente")
+@NamedQuery (name = "Cliente.findByName", query = "select c from Cliente c where c.nombreCliente = :nombre")
 public class ClienteEntity implements Serializable {
     
     /**
@@ -33,7 +35,7 @@ public class ClienteEntity implements Serializable {
      * Llave primaria de la Entidad Cliente
      */
     @Id
-    @Column (name = "id_cliente", unique = true)
+    @Column (name = "id_cliente", nullable = false)
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long idCliente;
     
@@ -47,7 +49,7 @@ public class ClienteEntity implements Serializable {
      * Variable que almacena el apellido del cliente
      */
     @Column (name = "apellido_cliente", nullable = false)
-    private int apellidoCliente;
+    private String apellidoCliente;
     
     /**
      * Variable que almacena el tipo de documento del cliente
@@ -101,7 +103,7 @@ public class ClienteEntity implements Serializable {
     /**
      * Variable que almacena el avatar del cliente
      */
-    @Column (name = "avatar_cliente")
+    @Column (name = "avatar_cliente",nullable = true)
     private String avatarCliente;
 
     @ManyToOne
@@ -110,6 +112,7 @@ public class ClienteEntity implements Serializable {
 
     /**
      * Metodos GET Y SET
+     * @return idCliente
      */
     
     public Long getIdCliente() {
@@ -128,11 +131,11 @@ public class ClienteEntity implements Serializable {
         this.nombreCliente = nombreCliente;
     }
 
-    public int getApellidoCliente() {
+    public String getApellidoCliente() {
         return apellidoCliente;
     }
 
-    public void setApellidoCliente(int apellidoCliente) {
+    public void setApellidoCliente(String apellidoCliente) {
         this.apellidoCliente = apellidoCliente;
     }
 

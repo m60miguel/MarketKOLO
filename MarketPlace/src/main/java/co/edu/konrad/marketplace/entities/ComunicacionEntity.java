@@ -18,7 +18,7 @@ import javax.persistence.ManyToOne;
  *
  * @author DarkFACS
  */
-@Entity
+@Entity (name = "Comunicacion")
 public class ComunicacionEntity implements Serializable {
     
     /**
@@ -30,7 +30,7 @@ public class ComunicacionEntity implements Serializable {
      * Llave primaria de la Entidad Comunicacion
      */
     @Id
-    @Column (name = "id_comunicacion", unique = true)
+    @Column (name = "id_comunicacion", nullable = false)
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long idComunicacion;
     
@@ -52,6 +52,7 @@ public class ComunicacionEntity implements Serializable {
 
     /**
      * Metodos GET Y SET
+     * @return idComunicacion
      */
     
     public Long getIdComunicacion() {

@@ -28,7 +28,7 @@ public class EnvioPersistence {
      * @return Lista de datos de la tabla Envio
      */
     public List<EnvioEntity> findAll(){
-        Query todos = em.createQuery("select e from EnvioEntity e");
+        Query todos = em.createQuery("select e from Envio e");
         return todos.getResultList();
     }
     

@@ -11,12 +11,14 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.NamedQuery;
 
 /**
  *
  * @author DarkFACS
  */
-@Entity
+@Entity (name = "Proveedor")
+@NamedQuery (name = "Proveedor.findByName", query = "select p from Proveedor p where p.nombreProveedor = :nombre")
 public class ProveedorEntity implements Serializable {
     
     /**
@@ -28,7 +30,7 @@ public class ProveedorEntity implements Serializable {
      * Llave primaria de la Entidad Proveedor
      */
     @Id
-    @Column (name = "id_proveedor", unique = true)
+    @Column (name = "id_proveedor", nullable = false)
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long idProveedor;
     
@@ -64,6 +66,7 @@ public class ProveedorEntity implements Serializable {
 
     /**
      * Metodos GET Y SET
+     * @return 
      */
     
     public Long getIdProveedor() {

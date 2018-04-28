@@ -28,7 +28,7 @@ public class PaisPersistence {
      * @return Lista de datos de la tabla Pais
      */
     public List<PaisEntity> findAll(){
-        Query todos = em.createQuery("select e from PaisEntity e");
+        Query todos = em.createQuery("select e from Pais e");
         return todos.getResultList();
     }
     

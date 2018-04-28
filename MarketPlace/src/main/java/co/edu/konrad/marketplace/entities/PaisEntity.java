@@ -16,7 +16,7 @@ import javax.persistence.Id;
  *
  * @author DarkFACS
  */
-@Entity
+@Entity (name = "Pais")
 public class PaisEntity implements Serializable {
     
     /**
@@ -28,7 +28,7 @@ public class PaisEntity implements Serializable {
      * Llave primaria de la Entidad Pais
      */
     @Id
-    @Column (name = "id_pais", unique = true)
+    @Column (name = "id_pais", nullable = false)
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long idPais;
     
@@ -46,6 +46,7 @@ public class PaisEntity implements Serializable {
 
     /**
      * Metodos GET Y SET
+     * @return 
      */
     
     public Long getIdPais() {

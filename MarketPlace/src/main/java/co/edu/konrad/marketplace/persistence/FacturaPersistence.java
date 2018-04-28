@@ -28,7 +28,7 @@ public class FacturaPersistence {
      * @return Lista de datos de la tabla Factura
      */
     public List<FacturaEntity> findAll(){
-        Query todos = em.createQuery("select e from FacturaEntity e");
+        Query todos = em.createQuery("select e from Factura e");
         return todos.getResultList();
     }
     

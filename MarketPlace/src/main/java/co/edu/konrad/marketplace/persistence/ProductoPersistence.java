@@ -28,7 +28,7 @@ public class ProductoPersistence {
      * @return Lista de datos de la tabla Producto
      */
     public List<ProductoEntity> findAll(){
-        Query todos = em.createQuery("select e from ProductoEntity e");
+        Query todos = em.createQuery("select e from Producto e");
         return todos.getResultList();
     }
     

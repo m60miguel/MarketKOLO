@@ -18,7 +18,7 @@ import javax.persistence.ManyToOne;
  *
  * @author DarkFACS
  */
-@Entity
+@Entity (name = "Evaluacion")
 public class EvaluacionEntity implements Serializable {
     
     /**
@@ -30,7 +30,7 @@ public class EvaluacionEntity implements Serializable {
      * Llave primaria de la Entidad Evaluacion
      */
     @Id
-    @Column (name = "id_evaluacion", unique = true)
+    @Column (name = "id_evaluacion", nullable = false)
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long idEvaluacion;
     

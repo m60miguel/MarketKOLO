@@ -28,7 +28,7 @@ public class TipoProductoPersistence {
      * @return Lista de datos de la tabla TipoProducto
      */
     public List<TipoProductoEntity> findAll(){
-        Query todos = em.createQuery("select e from TipoProductoEntity e");
+        Query todos = em.createQuery("select e from TipoProducto e");
         return todos.getResultList();
     }
     

@@ -21,7 +21,7 @@ import javax.persistence.TemporalType;
  *
  * @author DarkFACS
  */
-@Entity
+@Entity (name = "Factura")
 public class FacturaEntity implements Serializable {
     
     /**
@@ -33,7 +33,7 @@ public class FacturaEntity implements Serializable {
      * Llave primaria de la Entidad Factura
      */
     @Id
-    @Column (name = "id_factura", unique = true)
+    @Column (name = "id_factura", nullable = false)
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long idFactura;
 
@@ -60,6 +60,7 @@ public class FacturaEntity implements Serializable {
 
     /**
      * Metodos GET Y SET
+     * @return idFactura
      */
     
     public Long getIdFactura() {

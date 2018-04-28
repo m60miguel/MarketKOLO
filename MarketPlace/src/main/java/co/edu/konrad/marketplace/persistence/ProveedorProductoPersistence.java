@@ -28,7 +28,7 @@ public class ProveedorProductoPersistence {
      * @return Lista de datos de la tabla ProveedorProducto
      */
     public List<ProveedorProductoEntity> findAll(){
-        Query todos = em.createQuery("select e from ProveedorProductoEntity e");
+        Query todos = em.createQuery("select e from ProveedorProducto e");
         return todos.getResultList();
     }
     

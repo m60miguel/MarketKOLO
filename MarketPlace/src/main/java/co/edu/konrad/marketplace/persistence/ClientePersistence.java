@@ -28,7 +28,7 @@ public class ClientePersistence {
      * @return Lista de datos de la tabla Cliente
      */
     public List<ClienteEntity> findAll(){
-        Query todos = em.createQuery("select e from ClienteEntity e");
+        Query todos = em.createQuery("select e from Cliente e");
         return todos.getResultList();
     }
     

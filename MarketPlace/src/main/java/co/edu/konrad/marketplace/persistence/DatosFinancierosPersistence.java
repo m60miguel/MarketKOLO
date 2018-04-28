@@ -28,7 +28,7 @@ public class DatosFinancierosPersistence {
      * @return Lista de datos de la tabla DatosFinancieros
      */
     public List<DatosFinancierosEntity> findAll(){
-        Query todos = em.createQuery("select e from DatosFinancierosEntity e");
+        Query todos = em.createQuery("select e from DatosFinancieros e");
         return todos.getResultList();
     }
     
