@@ -1,0 +1,187 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MarketPlace KOLO</title>
+        <link rel="stylesheet" href="css/foundation.css">
+        <link rel="stylesheet" href="css/app.css">
+        <script src="./js/vendor/jquery.js" type="text/javascript"></script>
+    </head>
+    <body>
+
+        <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
+            <button class="menu-icon" type="button" data-toggle="example-menu"></button>
+            <div class="title-bar-title">Menu</div>
+        </div>
+
+        <div class="top-bar" id="example-menu">
+            <div class="top-bar-left">
+                <ul class="dropdown menu" data-dropdown-menu>
+                    <li class="menu-text"><a href="./index.html">MarketPlace KOLO</a></li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="grid-frame">
+            <div class="grid-x grid-padding-x">
+                <div class="cell medium-6 large-2">
+                    <ul class="vertical menu drilldown" data-drilldown data-auto-height="true" data-animate-height="true">
+                        <li>
+                            <a>Proveedor</a>
+                            <ul class="vertical menu">
+                                <li>
+                                    <a href="./crearProveedor.html">Crear</a>
+                                </li>
+                                <li><a href="./editarProveedor.html">Editar</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a>Producto</a>
+                            <ul class="vertical menu">
+                                <li>
+                                    <a href="./crearProducto.html">Crear</a>
+                                </li>
+                                <li><a href="./editarProducto.html">Editar</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a>Tipo Producto</a>
+                            <ul class="vertical menu">
+                                <li>
+                                    <a href="./crearTipoProducto.html">Crear</a>
+                                </li>
+                                <li><a href="./editarTipoProducto.html">Editar</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a>Factura</a>
+                            <ul class="vertical menu">
+                                <li>
+                                    <a href="./crearFactura.html">Crear</a>
+                                </li>
+                                <li><a href="./editarFactura.html">Editar</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a>Cliente</a>
+                            <ul class="vertical menu">
+                                <li>
+                                    <a href="./crearCliente.html">Crear</a>
+                                </li>
+                                <li><a href="./editarCliente.html">Editar</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a>Datos Financieros</a>
+                            <ul class="vertical menu">
+                                <li>
+                                    <a href="./crearDatosFinancieros.html">Crear</a>
+                                </li>
+                                <li><a href="./editarDatosFinancieros.html">Editar</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a>Datos Pago</a>
+                            <ul class="vertical menu">
+                                <li>
+                                    <a href="./crearDatosPago.html">Crear</a>
+                                </li>
+                                <li><a href="./editarDatosPago.html">Editar</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a>Tipo Pago</a>
+                            <ul class="vertical menu">
+                                <li>
+                                    <a href="./crearTipoPago.html">Crear</a>
+                                </li>
+                                <li><a href="./editarTipoPago.html">Editar</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a>Env&iacute;o</a>
+                            <ul class="vertical menu">
+                                <li>
+                                    <a href="./crearEnvio.html">Crear</a>
+                                </li>
+                                <li><a href="./editarEnvio.html">Editar</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a>Ciudad</a>
+                            <ul class="vertical menu">
+                                <li>
+                                    <a href="./crearCiudad.html">Crear</a>
+                                </li>
+                                <li><a href="./editarCiudad.html">Editar</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a>Pa&iacute;s</a>
+                            <ul class="vertical menu">
+                                <li>
+                                    <a href="./crearPais.html">Crear</a>
+                                </li>
+                                <li><a href="./editarPais.html">Editar</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a>Comunicaci&oacute;n</a>
+                            <ul class="vertical menu">
+                                <li>
+                                    <a href="./crearComunicacion.html">Crear</a>
+                                </li>
+                                <li><a href="./editarComunicacion.html">Editar</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a>Evaluaci&oacute;n</a>
+                            <ul class="vertical menu">
+                                <li>
+                                    <a href="./crearEvaluacion.html">Crear</a>
+                                </li>
+                                <li><a href="./editarEvaluacion.html">Editar</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="cell medium-6 large-10">
+                    <div id="tablaClientes">
+                        <table class="table table-striped">
+                            <caption>CLIENTE</caption>
+                            <thead>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>Tipo Doc</th>
+                            <th>Nro Doc</th>
+                            <th>Fecha Nac</th>
+                            <th>Usuario</th>
+                            <th>Password</th>
+                            <th>Direcci&oacute;n</th>
+                            <th>Tel&eacute;fono</th>
+                            <th>E-mail</th>
+                            <th>Avatar</th>
+                            <th>Ciudad</th>
+                            <th>Acciones</th>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./js/cliente/cliente.js" type="text/javascript"></script>
+
+        <script src="js/vendor/jquery.js"></script>
+        <script src="js/vendor/what-input.js"></script>
+        <script src="js/vendor/foundation.js"></script>
+        <script src="js/vendor/foundation.drilldown.js"></script>
+        <script src="js/vendor/foundation.util.box.js"></script>
+        <script src="js/vendor/foundation.util.keyboard.js"></script>
+        <script src="js/vendor/foundation.util.nest.js"></script>
+        <script src="js/app.js"></script>
+    </body>
+</html>
