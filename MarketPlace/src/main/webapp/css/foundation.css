@@ -3607,7 +3607,7 @@ select {
 
 .drilldown a {
   padding: 0.7rem 1rem;
-  background: #fefefe; }
+  background: #d8d8d8; }
 
 .drilldown .is-drilldown-submenu {
   position: absolute;
@@ -5139,7 +5139,7 @@ a.thumbnail {
       flex-wrap: wrap; }
   .top-bar,
   .top-bar ul {
-    background-color: #e6e6e6; }
+    background-color: #252c30; }
   .top-bar input {
     max-width: 200px;
     margin-right: 1rem; }
