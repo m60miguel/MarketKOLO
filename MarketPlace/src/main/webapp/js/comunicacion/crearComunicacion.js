@@ -59,13 +59,14 @@
             var tipoCom = $('#typeCom').val();
             var desCom = $('#desCom').val();
             var proveedor = $('#provCode').val();
+            console.log(proveedor)
             $.ajax({
                 url: '/MarketPlace/api/comunicaciones/',
                 contentType: 'application/json',
                 data: JSON.stringify({
                     tipoComunicacion: tipoCom,
-                        descripcionComunicacion: desCom,
-                        proveedor: proveedor
+                    descripcionComunicacion: desCom,
+                    proveedor: proveedor
                 }),
                 method: 'POST',
                 dataType: 'json'
@@ -76,4 +77,21 @@
             });
         });
     }
+    ;
+    $.ajax({
+        url: '/MarketPlace/api/proveedores',
+        contentType: 'application/json',
+        method: 'GET',
+        dataType: 'json'
+    }).done(function (data) {
+        console.log(data);
+        for (var i = 0; i < data.length; i++) {
+            /*<option value="">Seleccione Proveedor</option>    */
+            var options = '<option value="' + data[i].idProveedor + '">' + data[i].nombreProveedor + '</option>'
+            $('#provCode').append(options);
+        }
+    }).fail(function (xhr, status, error) {
+        console.log(error);
+    });
+
 })(jQuery);
