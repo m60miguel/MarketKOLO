@@ -40,12 +40,12 @@ public class EnvioEntity implements Serializable {
     @Column (name = "direccion_envio")
     private String direccionEnvio;
     
-    @ManyToOne
-    @JoinColumn (name = "id_ciudad")
-    private CiudadEntity ciudad;
+    @JoinColumn (name = "ciudad_id")
+    private int ciudadId;
 
     /**
      * Metodos GET Y SET
+     * @return idEnvio
      */
     
     public Long getIdEnvio() {
@@ -64,11 +64,11 @@ public class EnvioEntity implements Serializable {
         this.direccionEnvio = direccionEnvio;
     }
 
-    public CiudadEntity getCiudad() {
-        return ciudad;
+    public int getCiudadId() {
+        return ciudadId;
     }
 
-    public void setCiudad(CiudadEntity ciudad) {
-        this.ciudad = ciudad;
+    public void setCiudadId(int ciudadId) {
+        this.ciudadId = ciudadId;
     }
 }

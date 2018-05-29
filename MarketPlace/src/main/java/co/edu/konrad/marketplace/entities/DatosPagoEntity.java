@@ -64,13 +64,11 @@ public class DatosPagoEntity implements Serializable {
     @Column (name = "cod_clave")
     private int codClave;
 
-    @ManyToOne
     @JoinColumn (name = "id_cliente")
-    private ClienteEntity cliente;
+    private int clienteId;
     
-    @ManyToOne
-    @JoinColumn (name = "id_tPago")
-    private TipoPagoEntity tipoPago;
+    @JoinColumn (name = "tPago_id")
+    private int tipoPagoId;
 
     /**
      * Metodos GET Y SET
@@ -125,19 +123,19 @@ public class DatosPagoEntity implements Serializable {
         this.codClave = codClave;
     }
 
-    public ClienteEntity getCliente() {
-        return cliente;
+    public int getClienteId() {
+        return clienteId;
     }
 
-    public void setCliente(ClienteEntity cliente) {
-        this.cliente = cliente;
+    public void setClienteId(int clienteId) {
+        this.clienteId = clienteId;
     }
 
-    public TipoPagoEntity getTipoPago() {
-        return tipoPago;
+    public int getTipoPagoId() {
+        return tipoPagoId;
     }
 
-    public void setTipoPago(TipoPagoEntity tipoPago) {
-        this.tipoPago = tipoPago;
+    public void setTipoPagoId(int tipoPagoId) {
+        this.tipoPagoId = tipoPagoId;
     }
 }

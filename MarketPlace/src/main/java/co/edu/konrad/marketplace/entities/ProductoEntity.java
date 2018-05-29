@@ -60,13 +60,12 @@ public class ProductoEntity implements Serializable {
     @Column (name = "garantia_producto")
     private int garantiaProducto;
 
-    @ManyToOne
-    @JoinColumn (name = "id_tProducto")
-    private TipoProductoEntity tipoProducto;
+    @JoinColumn (name = "tProducto_id")
+    private int tipoProductoId;
 
     /**
      * Metodos GET Y SET
-     * @return 
+     * @return idProducto
      */
     
     public Long getIdProducto() {
@@ -109,11 +108,11 @@ public class ProductoEntity implements Serializable {
         this.garantiaProducto = garantiaProducto;
     }
 
-    public TipoProductoEntity getTipoProducto() {
-        return tipoProducto;
+    public int getTipoProductoId() {
+        return tipoProductoId;
     }
 
-    public void setTipoProducto(TipoProductoEntity tipoProducto) {
-        this.tipoProducto = tipoProducto;
+    public void setTipoProductoId(int tipoProductoId) {
+        this.tipoProductoId = tipoProductoId;
     }
 }

@@ -6,17 +6,13 @@
 package co.edu.konrad.marketplace.entities;
 
 import java.io.Serializable;
-import java.util.Date;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
 import javax.persistence.NamedQuery;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
 
 /**
  *
@@ -66,9 +62,8 @@ public class ClienteEntity implements Serializable {
     /**
      * Variable que almacena la fecha de nacimiento del cliente
      */
-    @Temporal(TemporalType.DATE)
     @Column (name = "fechaNac_cliente", nullable = false)
-    private Date fechaNacCliente;
+    private String fechaNacCliente;
     
     /**
      * Variable que almacena el usuario del cliente
@@ -106,9 +101,8 @@ public class ClienteEntity implements Serializable {
     @Column (name = "avatar_cliente",nullable = true)
     private String avatarCliente;
 
-    @ManyToOne
-    @JoinColumn (name = "id_ciudad")
-    private CiudadEntity ciudad;
+    @JoinColumn (name = "ciudad_id")
+    private int ciudadId;
 
     /**
      * Metodos GET Y SET
@@ -155,11 +149,11 @@ public class ClienteEntity implements Serializable {
         this.nDocCliente = nDocCliente;
     }
 
-    public Date getFechaNacCliente() {
+    public String getFechaNacCliente() {
         return fechaNacCliente;
     }
 
-    public void setFechaNacCliente(Date fechaNacCliente) {
+    public void setFechaNacCliente(String fechaNacCliente) {
         this.fechaNacCliente = fechaNacCliente;
     }
 
@@ -211,11 +205,11 @@ public class ClienteEntity implements Serializable {
         this.avatarCliente = avatarCliente;
     }
 
-    public CiudadEntity getCiudad() {
-        return ciudad;
+    public int getCiudadId() {
+        return ciudadId;
     }
 
-    public void setCiudad(CiudadEntity ciudad) {
-        this.ciudad = ciudad;
+    public void setCiudadId(int ciudadId) {
+        this.ciudadId = ciudadId;
     }
 }

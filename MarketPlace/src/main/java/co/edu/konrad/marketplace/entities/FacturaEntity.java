@@ -50,13 +50,11 @@ public class FacturaEntity implements Serializable {
     @Column (name = "cantidad_compra", nullable = false)
     private int cantidadCompra;
     
-    @ManyToOne
     @JoinColumn (name = "id_cliente")
-    private ClienteEntity cliente;
+    private int clienteId;
     
-    @ManyToOne
-    @JoinColumn (name = "id_producto")
-    private ProductoEntity producto;
+    @JoinColumn (name = "producto_id")
+    private int productoId;
 
     /**
      * Metodos GET Y SET
@@ -87,19 +85,19 @@ public class FacturaEntity implements Serializable {
         this.cantidadCompra = cantidadCompra;
     }
 
-    public ClienteEntity getCliente() {
-        return cliente;
+    public int getClienteId() {
+        return clienteId;
     }
 
-    public void setCliente(ClienteEntity cliente) {
-        this.cliente = cliente;
+    public void setClienteId(int clienteId) {
+        this.clienteId = clienteId;
     }
 
-    public ProductoEntity getProducto() {
-        return producto;
+    public int getProductoId() {
+        return productoId;
     }
 
-    public void setProducto(ProductoEntity producto) {
-        this.producto = producto;
+    public void setProductoId(int productoId) {
+        this.productoId = productoId;
     }
 }

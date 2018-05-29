@@ -46,7 +46,7 @@ public class TipoProductoEntity implements Serializable {
 
     /**
      * Metodos GET Y SET
-     * @return 
+     * @return idTProducto
      */
     
     public Long getIdTProducto() {

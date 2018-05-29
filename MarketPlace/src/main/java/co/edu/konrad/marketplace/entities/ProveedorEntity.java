@@ -66,7 +66,7 @@ public class ProveedorEntity implements Serializable {
 
     /**
      * Metodos GET Y SET
-     * @return 
+     * @return idProveedor
      */
     
     public Long getIdProveedor() {

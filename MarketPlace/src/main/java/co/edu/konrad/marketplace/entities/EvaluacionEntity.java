@@ -46,12 +46,12 @@ public class EvaluacionEntity implements Serializable {
     @Column (name = "comentario_evaluacion")
     private String comentarioEvaluacion;
 
-    @ManyToOne
-    @JoinColumn (name = "id_producto")
-    private ProductoEntity producto;
+    @JoinColumn (name = "producto_id")
+    private int productoId;
 
     /**
      * Metodos GET Y SET
+     * @return idEvaluacion
      */
     
     public Long getIdEvaluacion() {
@@ -78,11 +78,11 @@ public class EvaluacionEntity implements Serializable {
         this.comentarioEvaluacion = comentarioEvaluacion;
     }
 
-    public ProductoEntity getProducto() {
-        return producto;
+    public int getProductoId() {
+        return productoId;
     }
 
-    public void setProducto(ProductoEntity producto) {
-        this.producto = producto;
+    public void setProductoId(int productoId) {
+        this.productoId = productoId;
     }
 }

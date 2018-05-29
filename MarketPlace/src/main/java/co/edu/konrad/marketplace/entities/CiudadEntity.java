@@ -12,7 +12,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
 import javax.persistence.NamedQuery;
 
 /**
@@ -48,9 +47,8 @@ public class CiudadEntity implements Serializable {
     @Column (name = "nombre_ciudad", nullable = false)
     private String nombreCiudad;
     
-    @ManyToOne
-    @JoinColumn (name = "id_pais")
-    private PaisEntity pais;
+    @JoinColumn (name = "pais_id")
+    private int paisId;
 
     /**
      * Metodos GET Y SET
@@ -81,11 +79,11 @@ public class CiudadEntity implements Serializable {
         this.nombreCiudad = nombreCiudad;
     }
 
-    public PaisEntity getPais() {
-        return pais;
+    public int getPaisId() {
+        return paisId;
     }
 
-    public void setPais(PaisEntity pais) {
-        this.pais = pais;
+    public void setPaisId(int paisId) {
+        this.paisId = paisId;
     }
 }

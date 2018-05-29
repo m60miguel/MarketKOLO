@@ -46,7 +46,7 @@ public class PaisEntity implements Serializable {
 
     /**
      * Metodos GET Y SET
-     * @return 
+     * @return idPais
      */
     
     public Long getIdPais() {

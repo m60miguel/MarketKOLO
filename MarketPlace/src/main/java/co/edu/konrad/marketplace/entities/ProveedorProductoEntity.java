@@ -12,7 +12,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
 
 /**
  *
@@ -46,17 +45,15 @@ public class ProveedorProductoEntity implements Serializable {
     @Column (name = "descripcion_pProducto")
     private String descripcionProveedorProducto;
 
-    @ManyToOne
-    @JoinColumn (name = "id_proveedor")
-    private ProveedorEntity proveedor;
+    @JoinColumn (name = "proveedor_id")
+    private int proveedorId;
     
-    @ManyToOne
-    @JoinColumn (name = "id_producto")
-    private ProductoEntity producto;
+    @JoinColumn (name = "producto_id")
+    private int productoId;
 
     /**
      * Metodos GET Y SET
-     * @return 
+     * @return idProveedorProducto
      */
     
     public Long getIdProveedorProducto() {
@@ -83,19 +80,19 @@ public class ProveedorProductoEntity implements Serializable {
         this.descripcionProveedorProducto = descripcionProveedorProducto;
     }
 
-    public ProveedorEntity getProveedor() {
-        return proveedor;
+    public int getProveedorId() {
+        return proveedorId;
     }
 
-    public void setProveedor(ProveedorEntity proveedor) {
-        this.proveedor = proveedor;
+    public void setProveedorId(int proveedorId) {
+        this.proveedorId = proveedorId;
     }
 
-    public ProductoEntity getProducto() {
-        return producto;
+    public int getProductoId() {
+        return productoId;
     }
 
-    public void setProducto(ProductoEntity producto) {
-        this.producto = producto;
+    public void setProductoId(int productoId) {
+        this.productoId = productoId;
     }
 }

@@ -50,12 +50,16 @@ public class DatosFinancierosEntity implements Serializable {
      * Variable que almacena el nivel de reputacion
      */
     @Column (name = "nivel_reputacion")
-    private String nivelreputacion;
+    private String nivelReputacion;
 
-    @ManyToOne
-    @JoinColumn (name = "id_proveedor")
-    private ProveedorEntity proveedor;
+    @JoinColumn (name = "proveedor_id")
+    private int proveedorId;
 
+    /**
+     * Metodos GET Y SET
+     * @return iddFinancieros
+     */
+    
     public Long getIddFinancieros() {
         return iddFinancieros;
     }
@@ -80,25 +84,19 @@ public class DatosFinancierosEntity implements Serializable {
         this.mercadoObjetivo = mercadoObjetivo;
     }
 
-    public String getNivelreputacion() {
-        return nivelreputacion;
+    public String getNivelReputacion() {
+        return nivelReputacion;
     }
 
-    public void setNivelreputacion(String nivelreputacion) {
-        this.nivelreputacion = nivelreputacion;
+    public void setNivelReputacion(String nivelReputacion) {
+        this.nivelReputacion = nivelReputacion;
     }
 
-    public ProveedorEntity getProveedor() {
-        return proveedor;
+    public int getProveedorId() {
+        return proveedorId;
     }
 
-    public void setProveedor(ProveedorEntity proveedor) {
-        this.proveedor = proveedor;
+    public void setProveedorId(int proveedorId) {
+        this.proveedorId = proveedorId;
     }
-
-    /**
-     * Metodos GET Y SET
-     */
-    
-    
 }

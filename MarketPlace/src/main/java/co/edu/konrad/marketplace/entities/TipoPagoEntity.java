@@ -40,7 +40,7 @@ public class TipoPagoEntity implements Serializable {
 
     /**
      * Metodos GET Y SET
-     * @return 
+     * @return idTPago
      */
     
     public Long getIdTPago() {
