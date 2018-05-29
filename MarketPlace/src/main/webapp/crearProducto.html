@@ -164,11 +164,13 @@
                         </div>
                         <div class="form-group">
                             <label class="control-label">Garant&iacute;a del Producto</label>
-                            <input class="form-control" id="warranty" type="text" placeholder="Ingrese el tiempo de garant&iacute;a">
+                            <input class="form-control" id="warranty" type="number" placeholder="Ingrese el tiempo de garant&iacute;a (meses)" min="6" max="36">
                         </div>
                         <div class="form-group">
                             <label class="control-label">Tipo del Producto</label>
-                            <input class="form-control" id="type" type="text" placeholder="Ingrese el tipo de producto">
+                            <select class="form-control" id="typeProdCode" required="">
+                                <option value="">Seleccione una Opción</option>
+                            </select>
                         </div>
                         <button type="button" class="success button" id="botonCrear">Crear Producto</button>
                     </div>
