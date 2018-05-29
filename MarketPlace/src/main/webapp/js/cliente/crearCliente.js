@@ -35,7 +35,7 @@
             var telefono = $('#phone').val(data.telefonoCliente);
             var email = $('#email').val(data.emailCliente);
             var avatar = $('#avatar').val(data.avatarCliente);
-            var ciudad = $('#city').val(data.ciudad);
+            var ciudad = $('#cityCode').val(data.ciudadId);
             var id = data.idCliente;
 
             $('#botonCrear').text('Actualizar Cliente').click(function (event) {
@@ -50,7 +50,7 @@
                 var telefono = $('#phone').val();
                 var email = $('#email').val();
                 var avatar = $('#avatar').val();
-                var ciudad = $('#city').val();
+                var ciudad = $('#cityCode').val();
 
                 $.ajax({
                     url: '/MarketPlace/api/clientes/' + id,
@@ -94,7 +94,7 @@
             var telefono = $('#phone').val();
             var email = $('#email').val();
             var avatar = $('#avatar').val();
-            var ciudad = $('#city').val();
+            var ciudad = $('#cityCode').val();
             $.ajax({
                 url: '/MarketPlace/api/clientes/',
                 contentType: 'application/json',
@@ -120,7 +120,20 @@
                 console.log(error);
             });
         });
-    }
+    };
+    $.ajax({
+        url: '/MarketPlace/api/ciudades',
+        contentType: 'application/json',
+        method: 'GET',
+        dataType: 'json'
+    }).done(function (data) {
+        console.log(data);
+        for (var i = 0; i < data.length; i++) {
+            /*<option value="">Seleccione Proveedor</option>    */
+            var options = '<option value="' + data[i].idCiudad + '">' + data[i].nombreCiudad + '</option>';
+            $('#cityCode').append(options);
+        }
+    }).fail(function (xhr, status, error) {
+        console.log(error);
+    });
 })(jQuery);
-
-

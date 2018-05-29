@@ -26,13 +26,13 @@
         }).done(function (data) {
             var codigo = $('#cityCod').val(data.codigoCiudad);
             var nombre = $('#cityName').val(data.nombreCiudad);
-            var pais = $('#countryCod').val(data.pais);
+            var pais = $('#countryCode').val(data.paisId);
             var id = data.idCiudad;
 
             $('#botonCrear').text('Actualizar Ciudad').click(function (event) {
                 var codigo = $('#cityCod').val();
                 var nombre = $('#cityName').val();
-                var pais = $('#countryCod').val();
+                var pais = $('#countryCode').val();
 
                 $.ajax({
                     url: '/MarketPlace/api/ciudades/' + id,
@@ -58,7 +58,7 @@
         $('#botonCrear').click(function (event) {
             var codigo = $('#cityCod').val();
             var nombre = $('#cityName').val();
-            var pais = $('#countryCod').val();
+            var pais = $('#countryCode').val();
             $.ajax({
                 url: '/MarketPlace/api/ciudades/',
                 contentType: 'application/json',
@@ -75,7 +75,20 @@
                 console.log(error);
             });
         });
-    }
+    };
+    $.ajax({
+        url: '/MarketPlace/api/paises',
+        contentType: 'application/json',
+        method: 'GET',
+        dataType: 'json'
+    }).done(function (data) {
+        console.log(data);
+        for (var i = 0; i < data.length; i++) {
+            /*<option value="">Seleccione Proveedor</option>    */
+            var options = '<option value="' + data[i].idPais + '">' + data[i].nombrePais + '</option>';
+            $('#countryCode').append(options);
+        }
+    }).fail(function (xhr, status, error) {
+        console.log(error);
+    });
 })(jQuery);
-
-

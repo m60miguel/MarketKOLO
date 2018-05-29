@@ -27,14 +27,14 @@
             var ventas = $('#annualsales').val(data.ventasAnuales);
             var mercado = $('#market').val(data.mercadoObjetivo);
             var nivel = $('#level').val(data.nivelReputacion);
-            var proveedor = $('#providercode').val(data.proveedor);
+            var proveedor = $('#provCode').val(data.proveedorId);
             var id = data.iddFinancieros;
 
             $('#botonCrear').text('Actualizar DatosFinancieros').click(function (event) {
                 var ventas = $('#annualsales').val();
                 var mercado = $('#market').val();
                 var nivel = $('#level').val();
-                var proveedor = $('#providercode').val();
+                var proveedor = $('#provCode').val();
 
                 $.ajax({
                     url: '/MarketPlace/api/datosfinancieros/' + id,
@@ -62,7 +62,7 @@
             var ventas = $('#annualsales').val();
             var mercado = $('#market').val();
             var nivel = $('#level').val();
-            var proveedor = $('#providercode').val();
+            var proveedor = $('#provCode').val();
             $.ajax({
                 url: '/MarketPlace/api/datosfinancieros/',
                 contentType: 'application/json',
@@ -80,5 +80,20 @@
                 console.log(error);
             });
         });
-    }
+    };
+    $.ajax({
+        url: '/MarketPlace/api/proveedores',
+        contentType: 'application/json',
+        method: 'GET',
+        dataType: 'json'
+    }).done(function (data) {
+        console.log(data);
+        for (var i = 0; i < data.length; i++) {
+            /*<option value="">Seleccione Proveedor</option>    */
+            var options = '<option value="' + data[i].idProveedor + '">' + data[i].nombreProvvedor + '</option>';
+            $('#provCode').append(options);
+        }
+    }).fail(function (xhr, status, error) {
+        console.log(error);
+    });
 })(jQuery);

@@ -35,10 +35,10 @@
                 acciones.append(botonActualizar);
                 acciones.append(botonEliminar);
                 
+                tableRow.append(proveedor);
                 tableRow.append(ventasAnuales);
                 tableRow.append(mercadoObjetivo);
                 tableRow.append(nivelReputacion);
-                tableRow.append(proveedor);
 
                 tableRow.append(acciones);
 

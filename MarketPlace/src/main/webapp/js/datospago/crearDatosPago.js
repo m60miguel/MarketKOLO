@@ -29,8 +29,8 @@
             var franquicia = $('#franchise').val(data.franquiciaBanco);
             var tarjeta = $('#card').val(data.nroTarjeta);
             var codCla = $('#keycode').val(data.codClave);
-            var cliente = $('#clientcode').val(data.cliente);
-            var tipoPago = $('#paycode').val(data.tipoPago);
+            var cliente = $('#nameCode').val(data.clienteId);
+            var tipoPago = $('#tPayCode').val(data.tipoPagoId);
             var id = data.idFactura;
 
             $('#botonCrear').text('Actualizar Factura').click(function (event) {
@@ -39,8 +39,8 @@
                 var franquicia = $('#franchise').val();
                 var tarjeta = $('#card').val();
                 var codCla = $('#keycode').val();
-                var cliente = $('#clientcode').val();
-                var tipoPago = $('#paycode').val();
+                var cliente = $('#nameCode').val();
+                var tipoPago = $('#tPayCode').val();
 
                 $.ajax({
                     url: '/MarketPlace/api/datospago/' + id,
@@ -73,8 +73,8 @@
             var franquicia = $('#franchise').val();
             var tarjeta = $('#card').val();
             var codCla = $('#keycode').val();
-            var cliente = $('#clientcode').val();
-            var tipoPago = $('#paycode').val();
+            var cliente = $('#nameCode').val();
+            var tipoPago = $('#tPayCode').val();
             $.ajax({
                 url: '/MarketPlace/api/datospago/',
                 contentType: 'application/json',
@@ -95,5 +95,35 @@
                 console.log(error);
             });
         });
-    }
+    };
+    $.ajax({
+        url: '/MarketPlace/api/clientes',
+        contentType: 'application/json',
+        method: 'GET',
+        dataType: 'json'
+    }).done(function (data) {
+        console.log(data);
+        for (var i = 0; i < data.length; i++) {
+            /*<option value="">Seleccione Proveedor</option>    */
+            var options = '<option value="' + data[i].idCliente + '">' + data[i].nombreCliente + '</option>';
+            $('#nameCode').append(options);
+        }
+    }).fail(function (xhr, status, error) {
+        console.log(error);
+    });
+    $.ajax({
+        url: '/MarketPlace/api/tipospago',
+        contentType: 'application/json',
+        method: 'GET',
+        dataType: 'json'
+    }).done(function (data) {
+        console.log(data);
+        for (var i = 0; i < data.length; i++) {
+            /*<option value="">Seleccione Proveedor</option>    */
+            var options = '<option value="' + data[i].idTPago + '">' + data[i].nombreTPago + '</option>';
+            $('#tPayCode').append(options);
+        }
+    }).fail(function (xhr, status, error) {
+        console.log(error);
+    });
 })(jQuery);

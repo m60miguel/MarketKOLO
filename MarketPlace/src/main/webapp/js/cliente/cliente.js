@@ -56,12 +56,14 @@
                 tableRow.append(tDocCliente);
                 tableRow.append(nDocCliente);
                 tableRow.append(fechaNacCliente);
-                tableRow.append(usuarioCliente);
-                tableRow.append(passCliente);
+                tableRow.append(ciudad);
                 tableRow.append(direccionCliente);
                 tableRow.append(telefonoCliente);
+                tableRow.append(emailCliente);
+                tableRow.append(usuarioCliente);
+                tableRow.append(passCliente);
                 tableRow.append(avatarCliente);
-                tableRow.append(ciudad);
+                
                 tableRow.append(acciones);
 
                 tableRow.append(acciones);

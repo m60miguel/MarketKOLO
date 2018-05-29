@@ -25,12 +25,12 @@
             dataType: 'json'
         }).done(function (data) {
             var direccion = $('#shippingaddress').val(data.direccionEnvio);
-            var ciudad = $('#citycode').val(data.ciudad);
+            var ciudad = $('#cityCode').val(data.ciudadId);
             var id = data.idEnvio;
 
             $('#botonCrear').text('Actualizar Envio').click(function (event) {
                 var direccion = $('#shippingaddress').val();
-                var ciudad = $('#citycode').val();
+                var ciudad = $('#cityCode').val();
 
                 $.ajax({
                     url: '/MarketPlace/api/envios/' + id,
@@ -54,7 +54,7 @@
     } else {
         $('#botonCrear').click(function (event) {
             var direccion = $('#shippingaddress').val();
-            var ciudad = $('#citycode').val();
+            var ciudad = $('#cityCode').val();
             $.ajax({
                 url: '/MarketPlace/api/envios/',
                 contentType: 'application/json',
@@ -70,5 +70,20 @@
                 console.log(error);
             });
         });
-    }
+    };
+    $.ajax({
+        url: '/MarketPlace/api/ciudades',
+        contentType: 'application/json',
+        method: 'GET',
+        dataType: 'json'
+    }).done(function (data) {
+        console.log(data);
+        for (var i = 0; i < data.length; i++) {
+            /*<option value="">Seleccione Proveedor</option>    */
+            var options = '<option value="' + data[i].idCiudad + '">' + data[i].nombreCiudad + '</option>';
+            $('#cityCode').append(options);
+        }
+    }).fail(function (xhr, status, error) {
+        console.log(error);
+    });
 })(jQuery);

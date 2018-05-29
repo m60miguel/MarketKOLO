@@ -20,7 +20,7 @@
                 var cantidadCompra = $('<td>');
                 cantidadCompra.text(data[i].cantidadCompra);
                 var cliente = $('<td>');
-                cliente.text(data[i].cliente);
+                cliente.text(data[i].clienteId);
                 var producto = $('<td>');
                 producto.text(data[i].producto);
                 var acciones = $('<td>');
@@ -35,10 +35,10 @@
                 acciones.append(botonActualizar);
                 acciones.append(botonEliminar);
                 
-                tableRow.append(fechaCompra);
-                tableRow.append(cantidadCompra);
                 tableRow.append(cliente);
                 tableRow.append(producto);
+                tableRow.append(cantidadCompra);
+                tableRow.append(fechaCompra);
 
                 tableRow.append(acciones);
 

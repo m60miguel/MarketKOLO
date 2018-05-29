@@ -28,7 +28,7 @@
             var marca = $('#trademark').val(data.marcaProducto);
             var valor = $('#price').val(data.valorProducto);
             var garantia = $('#warranty').val(data.garantiaProducto);
-            var tipo = $('#type').val(data.tipoProducto);
+            var tipo = $('#typeProdCode').val(data.tipoProductoId);
             var id = data.idProducto;
 
             $('#botonCrear').text('Actualizar Producto').click(function (event) {
@@ -36,7 +36,7 @@
                 var marca = $('#trademark').val();
                 var valor = $('#price').val();
                 var garantia = $('#warranty').val();
-                var tipo = $('#type').val();
+                var tipo = $('#typeProdCode').val();
 
                 $.ajax({
                     url: '/MarketPlace/api/productos/' + id,
@@ -66,7 +66,7 @@
             var marca = $('#trademark').val();
             var valor = $('#price').val();
             var garantia = $('#warranty').val();
-            var tipo = $('#type').val();
+            var tipo = $('#typeProdCode').val();
             $.ajax({
                 url: '/MarketPlace/api/productos/',
                 contentType: 'application/json',
@@ -85,7 +85,20 @@
                 console.log(error);
             });
         });
-    }
+    };
+    $.ajax({
+        url: '/MarketPlace/api/tiposproducto',
+        contentType: 'application/json',
+        method: 'GET',
+        dataType: 'json'
+    }).done(function (data) {
+        console.log(data);
+        for (var i = 0; i < data.length; i++) {
+            /*<option value="">Seleccione Proveedor</option>    */
+            var options = '<option value="' + data[i].idTProducto + '">' + data[i].nombreTProducto + '</option>';
+            $('#typeProdCode').append(options);
+        }
+    }).fail(function (xhr, status, error) {
+        console.log(error);
+    });
 })(jQuery);
-
-

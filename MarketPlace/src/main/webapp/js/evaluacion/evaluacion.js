@@ -33,9 +33,9 @@
                 acciones.append(botonActualizar);
                 acciones.append(botonEliminar);
                 
+                tableRow.append(producto);
                 tableRow.append(calificacionEvaluacion);
                 tableRow.append(comentarioEvaluacion);
-                tableRow.append(producto);
 
                 tableRow.append(acciones);
 

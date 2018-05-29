@@ -6,7 +6,7 @@
 (function ($){
     $(document).ready(function (event){
         $.ajax({
-            url: '/MarketPlace/api/paises',
+            url: '/MarketPlace/api/datospago',
             contentType: 'application/json',
             method: 'GET',
             dataType: 'json'
@@ -15,28 +15,43 @@
             for(var i=0; i<data.length; i++){
                 var tableRow = $('<tr>');
                 //<td>: Cada division de la tabla
-                var nombrePais = $('<td>');
-                nombrePais.text(data[i].nombrePais);
-                var codigoPais = $('<td>');
-                codigoPais.text(data[i].codigoPais);
+                var nombreBanco = $('<td>');
+                nombreBanco.text(data[i].nombreBanco);
+                var nroCuenta = $('<td>');
+                nroCuenta.text(data[i].nroCuenta);
+                var franquiciaBanco = $('<td>');
+                franquiciaBanco.text(data[i].franquiciaBanco);
+                var nroTarjeta = $('<td>');
+                nroTarjeta.text(data[i].nroTarjeta);
+                var codClave = $('<td>');
+                codClave.text(data[i].codClave);
+                var cliente = $('<td>');
+                cliente.text(data[i].cliente);
+                var tipoPago = $('<td>');
+                tipoPago.text(data[i].tipoPago);
                 var acciones = $('<td>');
                 
                 var botonEliminar = $('<button>').addClass('button alert');
-                botonEliminar.text('Eliminar').attr('data-id', data[i].idPais);
+                botonEliminar.text('Eliminar').attr('data-id', data[i].idDatosPago);
                 botonEliminar.click(eliminar);
                 
-                var botonActualizar = $('<a href="/MarketPlace/crearPais.html?id='+data[i].idPais+'">').addClass('button success');
+                var botonActualizar = $('<a href="/MarketPlace/crearDatosPago.html?id='+data[i].idDatosPago+'">').addClass('button success');
                 botonActualizar.text('Actualizar');
                 
                 acciones.append(botonActualizar);
                 acciones.append(botonEliminar);
                 
-                tableRow.append(codigoPais);
-                tableRow.append(nombrePais);
+                tableRow.append(nombreBanco);
+                tableRow.append(nroCuenta);
+                tableRow.append(franquiciaBanco);
+                tableRow.append(nroTarjeta);
+                tableRow.append(codClave);
+                tableRow.append(cliente);
+                tableRow.append(tipoPago);
 
                 tableRow.append(acciones);
 
-                $('#tablaPaises table tbody').append(tableRow);
+                $('#tablaDatosPago table tbody').append(tableRow);
             }
         }).fail(function (xhr, status, error){
            console.log(error);
@@ -45,7 +60,7 @@
     
     function eliminar(event){
         $.ajax({
-            url: '/MarketPlace/api/paises/'+$(this).attr('data-id'),
+            url: '/MarketPlace/api/datospago/'+$(this).attr('data-id'),
             contentType: 'application/json',
             method: 'DELETE',
             dataType: 'json'

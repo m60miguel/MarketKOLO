@@ -26,7 +26,7 @@
         }).done(function (data) {
             var tipoCom = $('#typeCom').val(data.tipoComunicacion);
             var desCom = $('#desCom').val(data.descripcionComunicacion);
-            var proveedor = $('#provCode').val(data.proveedor);
+            var proveedor = $('#provCode').val(data.proveedorId);
             var id = data.idComunicacion;
 
             $('#botonCrear').text('Actualizar Comunicacion').click(function (event) {
@@ -76,8 +76,7 @@
                 console.log(error);
             });
         });
-    }
-    ;
+    };
     $.ajax({
         url: '/MarketPlace/api/proveedores',
         contentType: 'application/json',
@@ -87,11 +86,10 @@
         console.log(data);
         for (var i = 0; i < data.length; i++) {
             /*<option value="">Seleccione Proveedor</option>    */
-            var options = '<option value="' + data[i].idProveedor + '">' + data[i].nombreProveedor + '</option>'
+            var options = '<option value="' + data[i].idProveedor + '">' + data[i].nombreProveedor + '</option>';
             $('#provCode').append(options);
         }
     }).fail(function (xhr, status, error) {
         console.log(error);
     });
-
 })(jQuery);

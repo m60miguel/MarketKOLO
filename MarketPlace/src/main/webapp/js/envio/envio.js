@@ -31,8 +31,8 @@
                 acciones.append(botonActualizar);
                 acciones.append(botonEliminar);
                 
-                tableRow.append(direccionEnvio);
                 tableRow.append(ciudad);
+                tableRow.append(direccionEnvio);
 
                 tableRow.append(acciones);
 
@@ -55,5 +55,20 @@
         }).fail(function (xhr, status, error){
             console.log("Error");
         });
-    }
+    };
+    $.ajax({
+        url: '/MarketPlace/api/ciudades',
+        contentType: 'application/json',
+        method: 'GET',
+        dataType: 'json'
+    }).done(function (data) {
+        console.log(data);
+        for (var i = 0; i < data.length; i++) {
+            /*<option value="">Seleccione Proveedor</option>    */
+            var options = '<option value="' + data[i].idCiudad + '">' + data[i].nombreCiudad + '</option>';
+            $('#cityCode').append(options);
+        }
+    }).fail(function (xhr, status, error) {
+        console.log(error);
+    });
 })(jQuery);

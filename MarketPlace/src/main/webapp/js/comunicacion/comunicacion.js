@@ -6,7 +6,7 @@
 (function ($){
     $(document).ready(function (event){
         $.ajax({
-            url: '/MarketPlace/api/envios',
+            url: '/MarketPlace/api/comunicaciones',
             contentType: 'application/json',
             method: 'GET',
             dataType: 'json'
@@ -33,9 +33,9 @@
                 acciones.append(botonActualizar);
                 acciones.append(botonEliminar);
                 
+                tableRow.append(proveedor);
                 tableRow.append(tipoComunicacion);
                 tableRow.append(descripcionComunicacion);
-                tableRow.append(proveedor);
 
                 tableRow.append(acciones);
 
@@ -48,7 +48,7 @@
     
     function eliminar(event){
         $.ajax({
-            url: '/MarketPlace/api/envios/'+$(this).attr('data-id'),
+            url: '/MarketPlace/api/comunicaciones/'+$(this).attr('data-id'),
             contentType: 'application/json',
             method: 'DELETE',
             dataType: 'json'

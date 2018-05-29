@@ -26,13 +26,13 @@
         }).done(function (data) {
             var calificacion = $('#rating').val(data.calificacionEvaluacion);
             var comentario = $('#comment').val(data.comentarioEvaluacion);
-            var producto = $('#productkey').val(data.producto);
+            var producto = $('#prodCode').val(data.productoId);
             var id = data.idEvaluacion;
 
             $('#botonCrear').text('Actualizar Evaluacion').click(function (event) {
                 var calificacion = $('#rating').val();
                 var comentario = $('#comment').val();
-                var producto = $('#productkey').val();
+                var producto = $('#prodCode').val();
 
                 $.ajax({
                     url: '/MarketPlace/api/evaluaciones/' + id,
@@ -58,7 +58,7 @@
         $('#botonCrear').click(function (event) {
             var calificacion = $('#rating').val();
             var comentario = $('#comment').val();
-            var producto = $('#productkey').val();
+            var producto = $('#prodCode').val();
             $.ajax({
                 url: '/MarketPlace/api/evaluaciones/',
                 contentType: 'application/json',
@@ -75,5 +75,20 @@
                 console.log(error);
             });
         });
-    }
+    };
+    $.ajax({
+        url: '/MarketPlace/api/productod',
+        contentType: 'application/json',
+        method: 'GET',
+        dataType: 'json'
+    }).done(function (data) {
+        console.log(data);
+        for (var i = 0; i < data.length; i++) {
+            /*<option value="">Seleccione Proveedor</option>    */
+            var options = '<option value="' + data[i].idProducto + '">' + data[i].nombreProducto + '</option>';
+            $('#prodCode').append(options);
+        }
+    }).fail(function (xhr, status, error) {
+        console.log(error);
+    });
 })(jQuery);
