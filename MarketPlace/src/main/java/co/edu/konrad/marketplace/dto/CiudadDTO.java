@@ -6,7 +6,6 @@
 package co.edu.konrad.marketplace.dto;
 
 import co.edu.konrad.marketplace.entities.CiudadEntity;
-import co.edu.konrad.marketplace.entities.PaisEntity;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -22,7 +21,7 @@ public class CiudadDTO {
 
     private String nombreCiudad;
     
-    private PaisEntity pais;
+    private int pais;
     
     public CiudadDTO(){
         
@@ -32,7 +31,7 @@ public class CiudadDTO {
         ciudad.setIdCiudad(this.idCiudad);
         ciudad.setCodigoCiudad(this.codigoCiudad);
         ciudad.setNombreCiudad(this.nombreCiudad);
-        ciudad.setPais(this.pais);
+        ciudad.setPaisId(this.pais);
         return ciudad;
     }
     
@@ -40,7 +39,7 @@ public class CiudadDTO {
         this.idCiudad = ciudad.getIdCiudad();
         this.codigoCiudad = ciudad.getCodigoCiudad();
         this.nombreCiudad = ciudad.getNombreCiudad();
-        this.pais = ciudad.getPais();
+        this.pais = ciudad.getPaisId();
     }
     
     public static List<CiudadDTO> toCiudadList(List<CiudadEntity> ciudadList){
@@ -75,12 +74,11 @@ public class CiudadDTO {
         this.nombreCiudad = nombreCiudad;
     }
 
-    public PaisEntity getPais() {
+    public int getPais() {
         return pais;
     }
 
-    public void setPais(PaisEntity pais) {
+    public void setPais(int pais) {
         this.pais = pais;
     }
-
 }

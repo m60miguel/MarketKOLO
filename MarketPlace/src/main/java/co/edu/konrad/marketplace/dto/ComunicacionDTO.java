@@ -6,7 +6,6 @@
 package co.edu.konrad.marketplace.dto;
 
 import co.edu.konrad.marketplace.entities.ComunicacionEntity;
-import co.edu.konrad.marketplace.entities.ProveedorEntity;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -22,8 +21,8 @@ public class ComunicacionDTO {
 
     private String descripcionComunicacion;
 
-    private ProveedorEntity proveedor;
-    
+    private int proveedor;
+
     public ComunicacionDTO(){
         
     }
@@ -32,7 +31,7 @@ public class ComunicacionDTO {
         comunicacion.setIdComunicacion(this.idComunicacion);
         comunicacion.setTipoComunicacion(this.tipoComunicacion);
         comunicacion.setDescripcionComunicacion(this.descripcionComunicacion);
-        comunicacion.setProveedor(this.proveedor);
+        comunicacion.setProveedorId(this.proveedor);
         return comunicacion;
     }
     
@@ -40,7 +39,7 @@ public class ComunicacionDTO {
         this.idComunicacion = comunicacion.getIdComunicacion();
         this.tipoComunicacion = comunicacion.getTipoComunicacion();
         this.descripcionComunicacion = comunicacion.getDescripcionComunicacion();
-        this.proveedor  = comunicacion.getProveedor();
+        this.proveedor  = comunicacion.getProveedorId();
     }
     
     public static List<ComunicacionDTO> toComunicacionList(List<ComunicacionEntity> comunicacionList){
@@ -50,7 +49,7 @@ public class ComunicacionDTO {
         }
         return listaComunicaciones;
     }
-
+    
     public Long getIdComunicacion() {
         return idComunicacion;
     }
@@ -75,11 +74,11 @@ public class ComunicacionDTO {
         this.descripcionComunicacion = descripcionComunicacion;
     }
 
-    public ProveedorEntity getProveedor() {
+    public int getProveedor() {
         return proveedor;
     }
 
-    public void setProveedor(ProveedorEntity proveedor) {
+    public void setProveedor(int proveedor) {
         this.proveedor = proveedor;
     }
 }

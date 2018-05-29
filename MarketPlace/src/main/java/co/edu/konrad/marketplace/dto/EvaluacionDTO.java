@@ -6,7 +6,6 @@
 package co.edu.konrad.marketplace.dto;
 
 import co.edu.konrad.marketplace.entities.EvaluacionEntity;
-import co.edu.konrad.marketplace.entities.ProductoEntity;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -22,8 +21,8 @@ public class EvaluacionDTO {
 
     private String comentarioEvaluacion;
 
-    private ProductoEntity producto;
-    
+    private int producto;
+
     public EvaluacionDTO(){
         
     }
@@ -32,7 +31,7 @@ public class EvaluacionDTO {
         evaluacion.setIdEvaluacion(this.idEvaluacion);
         evaluacion.setCalificacionEvaluacion(this.calificacionEvaluacion);
         evaluacion.setComentarioEvaluacion(this.comentarioEvaluacion);
-        evaluacion.setProducto(this.producto);
+        evaluacion.setProductoId(this.producto);
         return evaluacion;
     }
     
@@ -40,7 +39,7 @@ public class EvaluacionDTO {
         this.idEvaluacion = evaluacion.getIdEvaluacion();
         this.calificacionEvaluacion = evaluacion.getCalificacionEvaluacion();
         this.comentarioEvaluacion = evaluacion.getComentarioEvaluacion();
-        this.producto = evaluacion.getProducto();
+        this.producto = evaluacion.getProductoId();
     }
     
     public static List<EvaluacionDTO> toEvaluacionList(List<EvaluacionEntity> evaluacionList){
@@ -50,7 +49,7 @@ public class EvaluacionDTO {
         }
         return listaEvaluaciones;
     }
-
+    
     public Long getIdEvaluacion() {
         return idEvaluacion;
     }
@@ -75,11 +74,11 @@ public class EvaluacionDTO {
         this.comentarioEvaluacion = comentarioEvaluacion;
     }
 
-    public ProductoEntity getProducto() {
+    public int getProductoId() {
         return producto;
     }
 
-    public void setProducto(ProductoEntity producto) {
+    public void setProductoId(int producto) {
         this.producto = producto;
     }
 }

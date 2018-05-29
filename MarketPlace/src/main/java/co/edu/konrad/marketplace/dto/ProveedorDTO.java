@@ -26,7 +26,7 @@ public class ProveedorDTO {
     private String passProveedor;
 
     private String avatarProveedor;
-    
+
     public ProveedorDTO(){
         
     }
@@ -57,7 +57,7 @@ public class ProveedorDTO {
         }
         return listaProveedores;
     }
-
+    
     public Long getIdProveedor() {
         return idProveedor;
     }

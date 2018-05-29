@@ -20,7 +20,7 @@ public class PaisDTO {
     private int codigoPais;
 
     private String nombrePais;
-    
+
     public PaisDTO(){
         
     }
@@ -45,5 +45,28 @@ public class PaisDTO {
         }
         return listaPaiss;
     }
+    
+    public Long getIdPais() {
+        return idPais;
+    }
 
+    public void setIdPais(Long idPais) {
+        this.idPais = idPais;
+    }
+
+    public int getCodigoPais() {
+        return codigoPais;
+    }
+
+    public void setCodigoPais(int codigoPais) {
+        this.codigoPais = codigoPais;
+    }
+
+    public String getNombrePais() {
+        return nombrePais;
+    }
+
+    public void setNombrePais(String nombrePais) {
+        this.nombrePais = nombrePais;
+    }
 }

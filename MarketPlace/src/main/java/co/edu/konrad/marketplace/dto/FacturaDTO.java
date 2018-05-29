@@ -5,9 +5,7 @@
  */
 package co.edu.konrad.marketplace.dto;
 
-import co.edu.konrad.marketplace.entities.ClienteEntity;
 import co.edu.konrad.marketplace.entities.FacturaEntity;
-import co.edu.konrad.marketplace.entities.ProductoEntity;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -24,10 +22,10 @@ public class FacturaDTO {
 
     private int cantidadCompra;
 
-    private ClienteEntity cliente;
+    private int cliente;
 
-    private ProductoEntity producto;
-    
+    private int producto;
+
     public FacturaDTO(){
         
     }
@@ -36,8 +34,8 @@ public class FacturaDTO {
         factura.setIdFactura(this.idFactura);
         factura.setFechaCompra(this.fechaCompra);
         factura.setCantidadCompra(this.cantidadCompra);
-        factura.setCliente(this.cliente);
-        factura.setProducto(this.producto);
+        factura.setClienteId(this.cliente);
+        factura.setProductoId(this.producto);
         return factura;
     }
     
@@ -45,8 +43,8 @@ public class FacturaDTO {
         this.idFactura = factura.getIdFactura();
         this.fechaCompra = factura.getFechaCompra();
         this.cantidadCompra = factura.getCantidadCompra();
-        this.cliente = factura.getCliente();
-        this.producto = factura.getProducto();
+        this.cliente = factura.getClienteId();
+        this.producto = factura.getProductoId();
     }
     
     public static List<FacturaDTO> toFacturaList(List<FacturaEntity> facturaList){
@@ -56,7 +54,7 @@ public class FacturaDTO {
         }
         return listaFacturas;
     }
-
+    
     public Long getIdFactura() {
         return idFactura;
     }
@@ -81,19 +79,19 @@ public class FacturaDTO {
         this.cantidadCompra = cantidadCompra;
     }
 
-    public ClienteEntity getCliente() {
+    public int getCliente() {
         return cliente;
     }
 
-    public void setCliente(ClienteEntity cliente) {
+    public void setCliente(int cliente) {
         this.cliente = cliente;
     }
 
-    public ProductoEntity getProducto() {
+    public int getProducto() {
         return producto;
     }
 
-    public void setProducto(ProductoEntity producto) {
+    public void setProducto(int producto) {
         this.producto = producto;
     }
 }

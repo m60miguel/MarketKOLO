@@ -5,7 +5,6 @@
  */
 package co.edu.konrad.marketplace.dto;
 
-import co.edu.konrad.marketplace.entities.CiudadEntity;
 import co.edu.konrad.marketplace.entities.EnvioEntity;
 import java.util.ArrayList;
 import java.util.List;
@@ -20,8 +19,8 @@ public class EnvioDTO {
     
     private String direccionEnvio;
 
-    private CiudadEntity ciudad;
-    
+    private int ciudad;
+
     public EnvioDTO(){
         
     }
@@ -29,14 +28,14 @@ public class EnvioDTO {
         EnvioEntity envio = new EnvioEntity();
         envio.setIdEnvio(this.idEnvio);
         envio.setDireccionEnvio(this.direccionEnvio);
-        envio.setCiudad(this.ciudad);
+        envio.setCiudadId(this.ciudad);
         return envio;
     }
     
     public EnvioDTO(EnvioEntity envio){
         this.idEnvio = envio.getIdEnvio();
         this.direccionEnvio = envio.getDireccionEnvio();
-        this.ciudad = envio.getCiudad();
+        this.ciudad = envio.getCiudadId();
     }
     
     public static List<EnvioDTO> toEnvioList(List<EnvioEntity> envioList){
@@ -46,7 +45,7 @@ public class EnvioDTO {
         }
         return listaEnvios;
     }
-
+    
     public Long getIdEnvio() {
         return idEnvio;
     }
@@ -63,11 +62,11 @@ public class EnvioDTO {
         this.direccionEnvio = direccionEnvio;
     }
 
-    public CiudadEntity getCiudad() {
+    public int getCiudad() {
         return ciudad;
     }
 
-    public void setCiudad(CiudadEntity ciudad) {
+    public void setCiudad(int ciudad) {
         this.ciudad = ciudad;
     }
 }

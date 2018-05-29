@@ -18,7 +18,7 @@ public class TipoPagoDTO {
     private Long idTPago;
 
     private String nombreTPago;
-    
+
     public TipoPagoDTO(){
         
     }
@@ -41,7 +41,7 @@ public class TipoPagoDTO {
         }
         return listaTipoPago;
     }
-
+    
     public Long getIdTPago() {
         return idTPago;
     }
@@ -57,5 +57,4 @@ public class TipoPagoDTO {
     public void setNombreTPago(String nombreTPago) {
         this.nombreTPago = nombreTPago;
     }
-
 }

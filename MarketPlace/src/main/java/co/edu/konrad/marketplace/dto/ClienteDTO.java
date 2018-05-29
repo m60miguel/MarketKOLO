@@ -5,10 +5,8 @@
  */
 package co.edu.konrad.marketplace.dto;
 
-import co.edu.konrad.marketplace.entities.CiudadEntity;
 import co.edu.konrad.marketplace.entities.ClienteEntity;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 /**
@@ -27,7 +25,7 @@ public class ClienteDTO {
 
     private int nDocCliente;
 
-    private Date fechaNacCliente;
+    private String fechaNacCliente;
 
     private String usuarioCliente;
 
@@ -41,8 +39,8 @@ public class ClienteDTO {
 
     private String avatarCliente;
 
-    private CiudadEntity ciudad;
-    
+    private int ciudad;
+
     public ClienteDTO(){
         
     }
@@ -60,7 +58,7 @@ public class ClienteDTO {
         cliente.setTelefonoCliente(this.telefonoCliente);
         cliente.setEmailCliente(this.emailCliente);
         cliente.setAvatarCliente(this.avatarCliente);
-        cliente.setCiudad(this.ciudad);
+        cliente.setCiudadId(this.ciudad);
         return cliente;
     }
     
@@ -77,7 +75,7 @@ public class ClienteDTO {
         this.telefonoCliente = cliente.getTelefonoCliente();
         this.emailCliente = cliente.getEmailCliente();
         this.avatarCliente = cliente.getAvatarCliente();
-        this.ciudad = cliente.getCiudad();
+        this.ciudad = cliente.getCiudadId();
     }
     
     public static List<ClienteDTO> toClienteList(List<ClienteEntity> clienteList){
@@ -87,7 +85,7 @@ public class ClienteDTO {
         }
         return listaClientes;
     }
-
+    
     public Long getIdCliente() {
         return idCliente;
     }
@@ -128,11 +126,11 @@ public class ClienteDTO {
         this.nDocCliente = nDocCliente;
     }
 
-    public Date getFechaNacCliente() {
+    public String getFechaNacCliente() {
         return fechaNacCliente;
     }
 
-    public void setFechaNacCliente(Date fechaNacCliente) {
+    public void setFechaNacCliente(String fechaNacCliente) {
         this.fechaNacCliente = fechaNacCliente;
     }
 
@@ -184,12 +182,11 @@ public class ClienteDTO {
         this.avatarCliente = avatarCliente;
     }
 
-    public CiudadEntity getCiudad() {
+    public int getCiudad() {
         return ciudad;
     }
 
-    public void setCiudad(CiudadEntity ciudad) {
+    public void setCiudad(int ciudad) {
         this.ciudad = ciudad;
     }
-
 }

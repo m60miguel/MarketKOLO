@@ -23,10 +23,10 @@ public class ProveedorProductoDTO {
 
     private String descripcionProveedorProducto;
 
-    private ProveedorEntity proveedor;
+    private int proveedor;
 
-    private ProductoEntity producto;
-    
+    private int producto;
+
     public ProveedorProductoDTO(){
         
     }
@@ -35,8 +35,8 @@ public class ProveedorProductoDTO {
         proveedorProducto.setIdProveedorProducto(this.idProveedorProducto);
         proveedorProducto.setTipoProveedorProducto(this.tipoProveedorProducto);
         proveedorProducto.setDescripcionProveedorProducto(this.descripcionProveedorProducto);
-        proveedorProducto.setProveedor(this.proveedor);
-        proveedorProducto.setProducto(this.producto);
+        proveedorProducto.setProveedorId(this.proveedor);
+        proveedorProducto.setProductoId(this.producto);
         return proveedorProducto;
     }
     
@@ -44,8 +44,8 @@ public class ProveedorProductoDTO {
         this.idProveedorProducto = proveedorProducto.getIdProveedorProducto();
         this.tipoProveedorProducto = proveedorProducto.getTipoProveedorProducto();
         this.descripcionProveedorProducto = proveedorProducto.getDescripcionProveedorProducto();
-        this.proveedor = proveedorProducto.getProveedor();
-        this.producto = proveedorProducto.getProducto();
+        this.proveedor = proveedorProducto.getProveedorId();
+        this.producto = proveedorProducto.getProductoId();
     }
     
     public static List<ProveedorProductoDTO> toProveedorProductoList(List<ProveedorProductoEntity> proveedorProductoList){
@@ -55,7 +55,7 @@ public class ProveedorProductoDTO {
         }
         return listaProveedoresProductos;
     }
-
+    
     public Long getIdProveedorProducto() {
         return idProveedorProducto;
     }
@@ -80,19 +80,19 @@ public class ProveedorProductoDTO {
         this.descripcionProveedorProducto = descripcionProveedorProducto;
     }
 
-    public ProveedorEntity getProveedor() {
+    public int getProveedor() {
         return proveedor;
     }
 
-    public void setProveedor(ProveedorEntity proveedor) {
+    public void setProveedor(int proveedor) {
         this.proveedor = proveedor;
     }
 
-    public ProductoEntity getProducto() {
+    public int getProducto() {
         return producto;
     }
 
-    public void setProducto(ProductoEntity producto) {
+    public void setProducto(int producto) {
         this.producto = producto;
     }
 }

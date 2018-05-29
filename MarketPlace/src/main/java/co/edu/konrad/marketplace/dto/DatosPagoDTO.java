@@ -5,9 +5,7 @@
  */
 package co.edu.konrad.marketplace.dto;
 
-import co.edu.konrad.marketplace.entities.ClienteEntity;
 import co.edu.konrad.marketplace.entities.DatosPagoEntity;
-import co.edu.konrad.marketplace.entities.TipoPagoEntity;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -29,10 +27,10 @@ public class DatosPagoDTO {
 
     private int codClave;
 
-    private ClienteEntity cliente;
+    private int cliente;
 
-    private TipoPagoEntity tipoPago;
-    
+    private int tipoPago;
+
     public DatosPagoDTO(){
         
     }
@@ -44,8 +42,8 @@ public class DatosPagoDTO {
         datosPago.setFranquiciaBanco(this.franquiciaBanco);
         datosPago.setNroTarjeta(this.nroTarjeta);
         datosPago.setCodClave(this.codClave);
-        datosPago.setCliente(this.cliente);
-        datosPago.setTipoPago(this.tipoPago);
+        datosPago.setClienteId(this.cliente);
+        datosPago.setTipoPagoId(this.tipoPago);
         return datosPago;
     }
     
@@ -56,8 +54,8 @@ public class DatosPagoDTO {
         this.franquiciaBanco  = datosPago.getFranquiciaBanco();
         this.nroTarjeta  = datosPago.getNroTarjeta();
         this.codClave = datosPago.getCodClave();
-        this.cliente  = datosPago.getCliente();
-        this.tipoPago  = datosPago.getTipoPago();
+        this.cliente  = datosPago.getClienteId();
+        this.tipoPago  = datosPago.getTipoPagoId();
     }
     
     public static List<DatosPagoDTO> toDatosPagoList(List<DatosPagoEntity> datosPagoList){
@@ -67,7 +65,7 @@ public class DatosPagoDTO {
         }
         return listaDatosPagos;
     }
-
+    
     public Long getIdDatosPago() {
         return idDatosPago;
     }
@@ -116,21 +114,19 @@ public class DatosPagoDTO {
         this.codClave = codClave;
     }
 
-    public ClienteEntity getCliente() {
+    public int getCliente() {
         return cliente;
     }
 
-    public void setCliente(ClienteEntity cliente) {
+    public void setCliente(int cliente) {
         this.cliente = cliente;
     }
 
-    public TipoPagoEntity getTipoPago() {
+    public int getTipoPago() {
         return tipoPago;
     }
 
-    public void setTipoPago(TipoPagoEntity tipoPago) {
+    public void setTipoPago(int tipoPago) {
         this.tipoPago = tipoPago;
     }
-
-    
 }

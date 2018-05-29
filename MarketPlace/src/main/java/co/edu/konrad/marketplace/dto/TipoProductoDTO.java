@@ -20,7 +20,7 @@ public class TipoProductoDTO {
     private String nombreTProducto;
 
     private String descripcionTProducto;
-    
+
     public TipoProductoDTO(){
         
     }
@@ -45,7 +45,7 @@ public class TipoProductoDTO {
         }
         return listaTipoProducto;
     }
-
+    
     public Long getIdTProducto() {
         return idTProducto;
     }
@@ -69,5 +69,4 @@ public class TipoProductoDTO {
     public void setDescripcionTProducto(String descripcionTProducto) {
         this.descripcionTProducto = descripcionTProducto;
     }
-
 }

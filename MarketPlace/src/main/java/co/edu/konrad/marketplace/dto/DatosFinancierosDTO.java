@@ -6,7 +6,6 @@
 package co.edu.konrad.marketplace.dto;
 
 import co.edu.konrad.marketplace.entities.DatosFinancierosEntity;
-import co.edu.konrad.marketplace.entities.ProveedorEntity;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -22,10 +21,10 @@ public class DatosFinancierosDTO {
 
     private String mercadoObjetivo;
 
-    private String nivelreputacion;
+    private String nivelReputacion;
 
-    private ProveedorEntity proveedor;
-    
+    private int proveedor;
+
     public DatosFinancierosDTO(){
         
     }
@@ -34,8 +33,8 @@ public class DatosFinancierosDTO {
         datosFinancieros.setIddFinancieros(this.iddFinancieros);
         datosFinancieros.setVentasAnuales(this.ventasAnuales);
         datosFinancieros.setMercadoObjetivo(this.mercadoObjetivo);
-        datosFinancieros.setNivelreputacion(this.nivelreputacion);
-        datosFinancieros.setProveedor(this.proveedor);
+        datosFinancieros.setNivelReputacion(this.nivelReputacion);
+        datosFinancieros.setProveedorId(this.proveedor);
         return datosFinancieros;
     }
     
@@ -43,8 +42,8 @@ public class DatosFinancierosDTO {
         this.iddFinancieros = datosFinancieros.getIddFinancieros();
         this.ventasAnuales = datosFinancieros.getVentasAnuales();
         this.mercadoObjetivo = datosFinancieros.getMercadoObjetivo();
-        this.nivelreputacion  = datosFinancieros.getNivelreputacion();
-        this.proveedor  = datosFinancieros.getProveedor();
+        this.nivelReputacion  = datosFinancieros.getNivelReputacion();
+        this.proveedor  = datosFinancieros.getProveedorId();
     }
     
     public static List<DatosFinancierosDTO> toDatosFinancierosList(List<DatosFinancierosEntity> datosFinancierosList){
@@ -54,7 +53,7 @@ public class DatosFinancierosDTO {
         }
         return listaDatosFinancieros;
     }
-
+    
     public Long getIddFinancieros() {
         return iddFinancieros;
     }
@@ -79,19 +78,19 @@ public class DatosFinancierosDTO {
         this.mercadoObjetivo = mercadoObjetivo;
     }
 
-    public String getNivelreputacion() {
-        return nivelreputacion;
+    public String getNivelReputacion() {
+        return nivelReputacion;
     }
 
-    public void setNivelreputacion(String nivelreputacion) {
-        this.nivelreputacion = nivelreputacion;
+    public void setNivelReputacion(String nivelReputacion) {
+        this.nivelReputacion = nivelReputacion;
     }
 
-    public ProveedorEntity getProveedor() {
+    public int getProveedor() {
         return proveedor;
     }
 
-    public void setProveedor(ProveedorEntity proveedor) {
+    public void setProveedor(int proveedor) {
         this.proveedor = proveedor;
-    } 
+    }
 }

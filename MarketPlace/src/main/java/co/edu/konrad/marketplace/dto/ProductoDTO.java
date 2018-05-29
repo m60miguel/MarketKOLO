@@ -6,7 +6,6 @@
 package co.edu.konrad.marketplace.dto;
 
 import co.edu.konrad.marketplace.entities.ProductoEntity;
-import co.edu.konrad.marketplace.entities.TipoProductoEntity;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -26,8 +25,8 @@ public class ProductoDTO {
 
     private int garantiaProducto;
 
-    private TipoProductoEntity tipoProducto;
-    
+    private int tipoProducto;
+
     public ProductoDTO(){
         
     }
@@ -38,7 +37,7 @@ public class ProductoDTO {
         producto.setMarcaProducto(this.marcaProducto);
         producto.setValorProducto(this.valorProducto);
         producto.setGarantiaProducto(this.garantiaProducto);
-        producto.setTipoProducto(this.tipoProducto);
+        producto.setTipoProductoId(this.tipoProducto);
         return producto;
     }
     
@@ -48,7 +47,7 @@ public class ProductoDTO {
         this.marcaProducto = producto.getMarcaProducto();
         this.valorProducto = producto.getValorProducto();
         this.garantiaProducto = producto.getGarantiaProducto();
-        this.tipoProducto = producto.getTipoProducto();
+        this.tipoProducto = producto.getTipoProductoId();
     }
     
     public static List<ProductoDTO> toProductoList(List<ProductoEntity> productoList){
@@ -58,7 +57,7 @@ public class ProductoDTO {
         }
         return listaProductos;
     }
-
+    
     public Long getIdProducto() {
         return idProducto;
     }
@@ -99,11 +98,11 @@ public class ProductoDTO {
         this.garantiaProducto = garantiaProducto;
     }
 
-    public TipoProductoEntity getTipoProducto() {
+    public int getTipoProducto() {
         return tipoProducto;
     }
 
-    public void setTipoProducto(TipoProductoEntity tipoProducto) {
+    public void setTipoProducto(int tipoProducto) {
         this.tipoProducto = tipoProducto;
     }
 }
