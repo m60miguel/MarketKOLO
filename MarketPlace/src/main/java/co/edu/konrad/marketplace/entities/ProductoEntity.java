@@ -12,7 +12,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
 import javax.persistence.NamedQuery;
 
 /**
@@ -59,6 +58,12 @@ public class ProductoEntity implements Serializable {
      */
     @Column (name = "garantia_producto")
     private int garantiaProducto;
+    
+    /**
+     * Variable que almacena la imagen del producto
+     */
+    @Column (name = "imagen_producto", nullable = false)
+    private String imagenProducto;
 
     @JoinColumn (name = "tProducto_id")
     private int tipoProductoId;
@@ -114,5 +119,13 @@ public class ProductoEntity implements Serializable {
 
     public void setTipoProductoId(int tipoProductoId) {
         this.tipoProductoId = tipoProductoId;
+    }
+
+    public String getImagenProducto() {
+        return imagenProducto;
+    }
+
+    public void setImagenProducto(String imagenProducto) {
+        this.imagenProducto = imagenProducto;
     }
 }
