@@ -1,71 +1,71 @@
-C:\Users\DarkFACS\Dropbox\Documentos\Ingenieria de Sistemas\Nuevas Tecnologías de Desarrollo\Proyecto\MarketPlace\src\main\java\co\edu\konrad\marketplace\resources\EnvioResource.java
-C:\Users\DarkFACS\Dropbox\Documentos\Ingenieria de Sistemas\Nuevas Tecnologías de Desarrollo\Proyecto\MarketPlace\src\main\java\co\edu\konrad\marketplace\resources\ProveedorProductoResource.java
-C:\Users\DarkFACS\Dropbox\Documentos\Ingenieria de Sistemas\Nuevas Tecnologías de Desarrollo\Proyecto\MarketPlace\src\main\java\co\edu\konrad\marketplace\persistence\DatosFinancierosPersistence.java
-C:\Users\DarkFACS\Dropbox\Documentos\Ingenieria de Sistemas\Nuevas Tecnologías de Desarrollo\Proyecto\MarketPlace\src\main\java\co\edu\konrad\marketplace\persistence\TipoPagoPersistence.java
-C:\Users\DarkFACS\Dropbox\Documentos\Ingenieria de Sistemas\Nuevas Tecnologías de Desarrollo\Proyecto\MarketPlace\src\main\java\co\edu\konrad\marketplace\resources\ProveedorResource.java
-C:\Users\DarkFACS\Dropbox\Documentos\Ingenieria de Sistemas\Nuevas Tecnologías de Desarrollo\Proyecto\MarketPlace\src\main\java\co\edu\konrad\marketplace\entities\EvaluacionEntity.java
-C:\Users\DarkFACS\Dropbox\Documentos\Ingenieria de Sistemas\Nuevas Tecnologías de Desarrollo\Proyecto\MarketPlace\src\main\java\co\edu\konrad\marketplace\dto\CiudadDTO.java
-C:\Users\DarkFACS\Dropbox\Documentos\Ingenieria de Sistemas\Nuevas Tecnologías de Desarrollo\Proyecto\MarketPlace\src\main\java\co\edu\konrad\marketplace\persistence\EnvioPersistence.java
-C:\Users\DarkFACS\Dropbox\Documentos\Ingenieria de Sistemas\Nuevas Tecnologías de Desarrollo\Proyecto\MarketPlace\src\main\java\co\edu\konrad\marketplace\entities\ClienteEntity.java
-C:\Users\DarkFACS\Dropbox\Documentos\Ingenieria de Sistemas\Nuevas Tecnologías de Desarrollo\Proyecto\MarketPlace\src\main\java\co\edu\konrad\marketplace\resources\DatosFinancierosResource.java
-C:\Users\DarkFACS\Dropbox\Documentos\Ingenieria de Sistemas\Nuevas Tecnologías de Desarrollo\Proyecto\MarketPlace\src\main\java\co\edu\konrad\marketplace\logic\ProveedorProductoLogic.java
-C:\Users\DarkFACS\Dropbox\Documentos\Ingenieria de Sistemas\Nuevas Tecnologías de Desarrollo\Proyecto\MarketPlace\src\main\java\co\edu\konrad\marketplace\logic\TipoPagoLogic.java
-C:\Users\DarkFACS\Dropbox\Documentos\Ingenieria de Sistemas\Nuevas Tecnologías de Desarrollo\Proyecto\MarketPlace\src\main\java\co\edu\konrad\marketplace\resources\PaisResource.java
-C:\Users\DarkFACS\Dropbox\Documentos\Ingenieria de Sistemas\Nuevas Tecnologías de Desarrollo\Proyecto\MarketPlace\src\main\java\co\edu\konrad\marketplace\dto\FacturaDTO.java
-C:\Users\DarkFACS\Dropbox\Documentos\Ingenieria de Sistemas\Nuevas Tecnologías de Desarrollo\Proyecto\MarketPlace\src\main\java\co\edu\konrad\marketplace\logic\ClienteLogic.java
-C:\Users\DarkFACS\Dropbox\Documentos\Ingenieria de Sistemas\Nuevas Tecnologías de Desarrollo\Proyecto\MarketPlace\src\main\java\co\edu\konrad\marketplace\entities\ComunicacionEntity.java
-C:\Users\DarkFACS\Dropbox\Documentos\Ingenieria de Sistemas\Nuevas Tecnologías de Desarrollo\Proyecto\MarketPlace\src\main\java\co\edu\konrad\marketplace\dto\ClienteDTO.java
-C:\Users\DarkFACS\Dropbox\Documentos\Ingenieria de Sistemas\Nuevas Tecnologías de Desarrollo\Proyecto\MarketPlace\src\main\java\co\edu\konrad\marketplace\persistence\CiudadPersistence.java
-C:\Users\DarkFACS\Dropbox\Documentos\Ingenieria de Sistemas\Nuevas Tecnologías de Desarrollo\Proyecto\MarketPlace\src\main\java\co\edu\konrad\marketplace\resources\TipoProductoResource.java
-C:\Users\DarkFACS\Dropbox\Documentos\Ingenieria de Sistemas\Nuevas Tecnologías de Desarrollo\Proyecto\MarketPlace\src\main\java\co\edu\konrad\marketplace\dto\TipoProductoDTO.java
-C:\Users\DarkFACS\Dropbox\Documentos\Ingenieria de Sistemas\Nuevas Tecnologías de Desarrollo\Proyecto\MarketPlace\src\main\java\co\edu\konrad\marketplace\resources\ComunicacionResource.java
-C:\Users\DarkFACS\Dropbox\Documentos\Ingenieria de Sistemas\Nuevas Tecnologías de Desarrollo\Proyecto\MarketPlace\src\main\java\co\edu\konrad\marketplace\resources\DatosPagoResource.java
-C:\Users\DarkFACS\Dropbox\Documentos\Ingenieria de Sistemas\Nuevas Tecnologías de Desarrollo\Proyecto\MarketPlace\src\main\java\co\edu\konrad\marketplace\entities\DatosPagoEntity.java
-C:\Users\DarkFACS\Dropbox\Documentos\Ingenieria de Sistemas\Nuevas Tecnologías de Desarrollo\Proyecto\MarketPlace\src\main\java\co\edu\konrad\marketplace\dto\DatosPagoDTO.java
-C:\Users\DarkFACS\Dropbox\Documentos\Ingenieria de Sistemas\Nuevas Tecnologías de Desarrollo\Proyecto\MarketPlace\src\main\java\co\edu\konrad\marketplace\dto\EnvioDTO.java
-C:\Users\DarkFACS\Dropbox\Documentos\Ingenieria de Sistemas\Nuevas Tecnologías de Desarrollo\Proyecto\MarketPlace\src\main\java\co\edu\konrad\marketplace\dto\PaisDTO.java
-C:\Users\DarkFACS\Dropbox\Documentos\Ingenieria de Sistemas\Nuevas Tecnologías de Desarrollo\Proyecto\MarketPlace\src\main\java\co\edu\konrad\marketplace\dto\TipoPagoDTO.java
-C:\Users\DarkFACS\Dropbox\Documentos\Ingenieria de Sistemas\Nuevas Tecnologías de Desarrollo\Proyecto\MarketPlace\src\main\java\co\edu\konrad\marketplace\persistence\EvaluacionPersistence.java
-C:\Users\DarkFACS\Dropbox\Documentos\Ingenieria de Sistemas\Nuevas Tecnologías de Desarrollo\Proyecto\MarketPlace\src\main\java\co\edu\konrad\marketplace\dto\EvaluacionDTO.java
-C:\Users\DarkFACS\Dropbox\Documentos\Ingenieria de Sistemas\Nuevas Tecnologías de Desarrollo\Proyecto\MarketPlace\src\main\java\co\edu\konrad\marketplace\entities\CiudadEntity.java
-C:\Users\DarkFACS\Dropbox\Documentos\Ingenieria de Sistemas\Nuevas Tecnologías de Desarrollo\Proyecto\MarketPlace\src\main\java\co\edu\konrad\marketplace\persistence\ProveedorPersistence.java
-C:\Users\DarkFACS\Dropbox\Documentos\Ingenieria de Sistemas\Nuevas Tecnologías de Desarrollo\Proyecto\MarketPlace\src\main\java\co\edu\konrad\marketplace\logic\ComunicacionLogic.java
-C:\Users\DarkFACS\Dropbox\Documentos\Ingenieria de Sistemas\Nuevas Tecnologías de Desarrollo\Proyecto\MarketPlace\src\main\java\co\edu\konrad\marketplace\resources\EvaluacionResource.java
-C:\Users\DarkFACS\Dropbox\Documentos\Ingenieria de Sistemas\Nuevas Tecnologías de Desarrollo\Proyecto\MarketPlace\src\main\java\co\edu\konrad\marketplace\logic\TipoProductoLogic.java
-C:\Users\DarkFACS\Dropbox\Documentos\Ingenieria de Sistemas\Nuevas Tecnologías de Desarrollo\Proyecto\MarketPlace\src\main\java\co\edu\konrad\marketplace\entities\TipoProductoEntity.java
-C:\Users\DarkFACS\Dropbox\Documentos\Ingenieria de Sistemas\Nuevas Tecnologías de Desarrollo\Proyecto\MarketPlace\src\main\java\co\edu\konrad\marketplace\resources\FacturaResource.java
-C:\Users\DarkFACS\Dropbox\Documentos\Ingenieria de Sistemas\Nuevas Tecnologías de Desarrollo\Proyecto\MarketPlace\src\main\java\co\edu\konrad\marketplace\dto\ProductoDTO.java
-C:\Users\DarkFACS\Dropbox\Documentos\Ingenieria de Sistemas\Nuevas Tecnologías de Desarrollo\Proyecto\MarketPlace\src\main\java\co\edu\konrad\marketplace\persistence\PaisPersistence.java
-C:\Users\DarkFACS\Dropbox\Documentos\Ingenieria de Sistemas\Nuevas Tecnologías de Desarrollo\Proyecto\MarketPlace\src\main\java\co\edu\konrad\marketplace\resources\CiudadResource.java
-C:\Users\DarkFACS\Dropbox\Documentos\Ingenieria de Sistemas\Nuevas Tecnologías de Desarrollo\Proyecto\MarketPlace\src\main\java\co\edu\konrad\marketplace\resources\ProductoResource.java
-C:\Users\DarkFACS\Dropbox\Documentos\Ingenieria de Sistemas\Nuevas Tecnologías de Desarrollo\Proyecto\MarketPlace\src\main\java\co\edu\konrad\marketplace\entities\ProveedorProductoEntity.java
-C:\Users\DarkFACS\Dropbox\Documentos\Ingenieria de Sistemas\Nuevas Tecnologías de Desarrollo\Proyecto\MarketPlace\src\main\java\co\edu\konrad\marketplace\persistence\ProductoPersistence.java
-C:\Users\DarkFACS\Dropbox\Documentos\Ingenieria de Sistemas\Nuevas Tecnologías de Desarrollo\Proyecto\MarketPlace\src\main\java\co\edu\konrad\marketplace\dto\DatosFinancierosDTO.java
-C:\Users\DarkFACS\Dropbox\Documentos\Ingenieria de Sistemas\Nuevas Tecnologías de Desarrollo\Proyecto\MarketPlace\src\main\java\co\edu\konrad\marketplace\dto\ProveedorProductoDTO.java
-C:\Users\DarkFACS\Dropbox\Documentos\Ingenieria de Sistemas\Nuevas Tecnologías de Desarrollo\Proyecto\MarketPlace\src\main\java\co\edu\konrad\marketplace\entities\PaisEntity.java
-C:\Users\DarkFACS\Dropbox\Documentos\Ingenieria de Sistemas\Nuevas Tecnologías de Desarrollo\Proyecto\MarketPlace\src\main\java\co\edu\konrad\marketplace\entities\EnvioEntity.java
-C:\Users\DarkFACS\Dropbox\Documentos\Ingenieria de Sistemas\Nuevas Tecnologías de Desarrollo\Proyecto\MarketPlace\src\main\java\co\edu\konrad\marketplace\resources\ApplicationConfig.java
-C:\Users\DarkFACS\Dropbox\Documentos\Ingenieria de Sistemas\Nuevas Tecnologías de Desarrollo\Proyecto\MarketPlace\src\main\java\co\edu\konrad\marketplace\dto\ProveedorDTO.java
-C:\Users\DarkFACS\Dropbox\Documentos\Ingenieria de Sistemas\Nuevas Tecnologías de Desarrollo\Proyecto\MarketPlace\src\main\java\co\edu\konrad\marketplace\entities\ProveedorEntity.java
-C:\Users\DarkFACS\Dropbox\Documentos\Ingenieria de Sistemas\Nuevas Tecnologías de Desarrollo\Proyecto\MarketPlace\src\main\java\co\edu\konrad\marketplace\persistence\ProveedorProductoPersistence.java
-C:\Users\DarkFACS\Dropbox\Documentos\Ingenieria de Sistemas\Nuevas Tecnologías de Desarrollo\Proyecto\MarketPlace\src\main\java\co\edu\konrad\marketplace\logic\CiudadLogic.java
-C:\Users\DarkFACS\Dropbox\Documentos\Ingenieria de Sistemas\Nuevas Tecnologías de Desarrollo\Proyecto\MarketPlace\src\main\java\co\edu\konrad\marketplace\logic\ProveedorLogic.java
-C:\Users\DarkFACS\Dropbox\Documentos\Ingenieria de Sistemas\Nuevas Tecnologías de Desarrollo\Proyecto\MarketPlace\src\main\java\co\edu\konrad\marketplace\logic\DatosPagoLogic.java
-C:\Users\DarkFACS\Dropbox\Documentos\Ingenieria de Sistemas\Nuevas Tecnologías de Desarrollo\Proyecto\MarketPlace\src\main\java\co\edu\konrad\marketplace\logic\PaisLogic.java
-C:\Users\DarkFACS\Dropbox\Documentos\Ingenieria de Sistemas\Nuevas Tecnologías de Desarrollo\Proyecto\MarketPlace\src\main\java\co\edu\konrad\marketplace\logic\ProductoLogic.java
-C:\Users\DarkFACS\Dropbox\Documentos\Ingenieria de Sistemas\Nuevas Tecnologías de Desarrollo\Proyecto\MarketPlace\src\main\java\co\edu\konrad\marketplace\entities\ProductoEntity.java
-C:\Users\DarkFACS\Dropbox\Documentos\Ingenieria de Sistemas\Nuevas Tecnologías de Desarrollo\Proyecto\MarketPlace\src\main\java\co\edu\konrad\marketplace\resources\ClienteResource.java
-C:\Users\DarkFACS\Dropbox\Documentos\Ingenieria de Sistemas\Nuevas Tecnologías de Desarrollo\Proyecto\MarketPlace\src\main\java\co\edu\konrad\marketplace\persistence\ClientePersistence.java
-C:\Users\DarkFACS\Dropbox\Documentos\Ingenieria de Sistemas\Nuevas Tecnologías de Desarrollo\Proyecto\MarketPlace\src\main\java\co\edu\konrad\marketplace\dto\ComunicacionDTO.java
-C:\Users\DarkFACS\Dropbox\Documentos\Ingenieria de Sistemas\Nuevas Tecnologías de Desarrollo\Proyecto\MarketPlace\src\main\java\co\edu\konrad\marketplace\entities\DatosFinancierosEntity.java
-C:\Users\DarkFACS\Dropbox\Documentos\Ingenieria de Sistemas\Nuevas Tecnologías de Desarrollo\Proyecto\MarketPlace\src\main\java\co\edu\konrad\marketplace\logic\EnvioLogic.java
-C:\Users\DarkFACS\Dropbox\Documentos\Ingenieria de Sistemas\Nuevas Tecnologías de Desarrollo\Proyecto\MarketPlace\src\main\java\co\edu\konrad\marketplace\entities\TipoPagoEntity.java
-C:\Users\DarkFACS\Dropbox\Documentos\Ingenieria de Sistemas\Nuevas Tecnologías de Desarrollo\Proyecto\MarketPlace\src\main\java\co\edu\konrad\marketplace\logic\DatosFinancierosLogic.java
-C:\Users\DarkFACS\Dropbox\Documentos\Ingenieria de Sistemas\Nuevas Tecnologías de Desarrollo\Proyecto\MarketPlace\src\main\java\co\edu\konrad\marketplace\entities\FacturaEntity.java
-C:\Users\DarkFACS\Dropbox\Documentos\Ingenieria de Sistemas\Nuevas Tecnologías de Desarrollo\Proyecto\MarketPlace\src\main\java\co\edu\konrad\marketplace\logic\EvaluacionLogic.java
-C:\Users\DarkFACS\Dropbox\Documentos\Ingenieria de Sistemas\Nuevas Tecnologías de Desarrollo\Proyecto\MarketPlace\src\main\java\co\edu\konrad\marketplace\logic\FacturaLogic.java
-C:\Users\DarkFACS\Dropbox\Documentos\Ingenieria de Sistemas\Nuevas Tecnologías de Desarrollo\Proyecto\MarketPlace\src\main\java\co\edu\konrad\marketplace\persistence\ComunicacionPersistence.java
-C:\Users\DarkFACS\Dropbox\Documentos\Ingenieria de Sistemas\Nuevas Tecnologías de Desarrollo\Proyecto\MarketPlace\src\main\java\co\edu\konrad\marketplace\resources\TipoPagoResource.java
-C:\Users\DarkFACS\Dropbox\Documentos\Ingenieria de Sistemas\Nuevas Tecnologías de Desarrollo\Proyecto\MarketPlace\src\main\java\co\edu\konrad\marketplace\persistence\FacturaPersistence.java
-C:\Users\DarkFACS\Dropbox\Documentos\Ingenieria de Sistemas\Nuevas Tecnologías de Desarrollo\Proyecto\MarketPlace\src\main\java\co\edu\konrad\marketplace\persistence\DatosPagoPersistence.java
-C:\Users\DarkFACS\Dropbox\Documentos\Ingenieria de Sistemas\Nuevas Tecnologías de Desarrollo\Proyecto\MarketPlace\src\main\java\co\edu\konrad\marketplace\persistence\TipoProductoPersistence.java
+C:\Users\Fenix\Documents\Development\NTD\MarketKOLO\MarketPlace\src\main\java\co\edu\konrad\marketplace\entities\TipoPagoEntity.java
+C:\Users\Fenix\Documents\Development\NTD\MarketKOLO\MarketPlace\src\main\java\co\edu\konrad\marketplace\dto\ProductoDTO.java
+C:\Users\Fenix\Documents\Development\NTD\MarketKOLO\MarketPlace\src\main\java\co\edu\konrad\marketplace\dto\ProveedorProductoDTO.java
+C:\Users\Fenix\Documents\Development\NTD\MarketKOLO\MarketPlace\src\main\java\co\edu\konrad\marketplace\persistence\ClientePersistence.java
+C:\Users\Fenix\Documents\Development\NTD\MarketKOLO\MarketPlace\src\main\java\co\edu\konrad\marketplace\dto\TipoProductoDTO.java
+C:\Users\Fenix\Documents\Development\NTD\MarketKOLO\MarketPlace\src\main\java\co\edu\konrad\marketplace\entities\CiudadEntity.java
+C:\Users\Fenix\Documents\Development\NTD\MarketKOLO\MarketPlace\src\main\java\co\edu\konrad\marketplace\entities\EvaluacionEntity.java
+C:\Users\Fenix\Documents\Development\NTD\MarketKOLO\MarketPlace\src\main\java\co\edu\konrad\marketplace\persistence\ProveedorPersistence.java
+C:\Users\Fenix\Documents\Development\NTD\MarketKOLO\MarketPlace\src\main\java\co\edu\konrad\marketplace\logic\ProveedorProductoLogic.java
+C:\Users\Fenix\Documents\Development\NTD\MarketKOLO\MarketPlace\src\main\java\co\edu\konrad\marketplace\logic\TipoPagoLogic.java
+C:\Users\Fenix\Documents\Development\NTD\MarketKOLO\MarketPlace\src\main\java\co\edu\konrad\marketplace\resources\ProveedorProductoResource.java
+C:\Users\Fenix\Documents\Development\NTD\MarketKOLO\MarketPlace\src\main\java\co\edu\konrad\marketplace\logic\DatosPagoLogic.java
+C:\Users\Fenix\Documents\Development\NTD\MarketKOLO\MarketPlace\src\main\java\co\edu\konrad\marketplace\logic\FacturaLogic.java
+C:\Users\Fenix\Documents\Development\NTD\MarketKOLO\MarketPlace\src\main\java\co\edu\konrad\marketplace\persistence\TipoPagoPersistence.java
+C:\Users\Fenix\Documents\Development\NTD\MarketKOLO\MarketPlace\src\main\java\co\edu\konrad\marketplace\entities\PaisEntity.java
+C:\Users\Fenix\Documents\Development\NTD\MarketKOLO\MarketPlace\src\main\java\co\edu\konrad\marketplace\dto\TipoPagoDTO.java
+C:\Users\Fenix\Documents\Development\NTD\MarketKOLO\MarketPlace\src\main\java\co\edu\konrad\marketplace\resources\FacturaResource.java
+C:\Users\Fenix\Documents\Development\NTD\MarketKOLO\MarketPlace\src\main\java\co\edu\konrad\marketplace\entities\EnvioEntity.java
+C:\Users\Fenix\Documents\Development\NTD\MarketKOLO\MarketPlace\src\main\java\co\edu\konrad\marketplace\resources\TipoProductoResource.java
+C:\Users\Fenix\Documents\Development\NTD\MarketKOLO\MarketPlace\src\main\java\co\edu\konrad\marketplace\logic\EnvioLogic.java
+C:\Users\Fenix\Documents\Development\NTD\MarketKOLO\MarketPlace\src\main\java\co\edu\konrad\marketplace\persistence\DatosPagoPersistence.java
+C:\Users\Fenix\Documents\Development\NTD\MarketKOLO\MarketPlace\src\main\java\co\edu\konrad\marketplace\dto\PaisDTO.java
+C:\Users\Fenix\Documents\Development\NTD\MarketKOLO\MarketPlace\src\main\java\co\edu\konrad\marketplace\resources\EnvioResource.java
+C:\Users\Fenix\Documents\Development\NTD\MarketKOLO\MarketPlace\src\main\java\co\edu\konrad\marketplace\dto\CiudadDTO.java
+C:\Users\Fenix\Documents\Development\NTD\MarketKOLO\MarketPlace\src\main\java\co\edu\konrad\marketplace\persistence\ProductoPersistence.java
+C:\Users\Fenix\Documents\Development\NTD\MarketKOLO\MarketPlace\src\main\java\co\edu\konrad\marketplace\persistence\CiudadPersistence.java
+C:\Users\Fenix\Documents\Development\NTD\MarketKOLO\MarketPlace\src\main\java\co\edu\konrad\marketplace\resources\ProductoResource.java
+C:\Users\Fenix\Documents\Development\NTD\MarketKOLO\MarketPlace\src\main\java\co\edu\konrad\marketplace\dto\ComunicacionDTO.java
+C:\Users\Fenix\Documents\Development\NTD\MarketKOLO\MarketPlace\src\main\java\co\edu\konrad\marketplace\entities\DatosPagoEntity.java
+C:\Users\Fenix\Documents\Development\NTD\MarketKOLO\MarketPlace\src\main\java\co\edu\konrad\marketplace\persistence\PaisPersistence.java
+C:\Users\Fenix\Documents\Development\NTD\MarketKOLO\MarketPlace\src\main\java\co\edu\konrad\marketplace\resources\CiudadResource.java
+C:\Users\Fenix\Documents\Development\NTD\MarketKOLO\MarketPlace\src\main\java\co\edu\konrad\marketplace\resources\EvaluacionResource.java
+C:\Users\Fenix\Documents\Development\NTD\MarketKOLO\MarketPlace\src\main\java\co\edu\konrad\marketplace\entities\DatosFinancierosEntity.java
+C:\Users\Fenix\Documents\Development\NTD\MarketKOLO\MarketPlace\src\main\java\co\edu\konrad\marketplace\logic\EvaluacionLogic.java
+C:\Users\Fenix\Documents\Development\NTD\MarketKOLO\MarketPlace\src\main\java\co\edu\konrad\marketplace\logic\ComunicacionLogic.java
+C:\Users\Fenix\Documents\Development\NTD\MarketKOLO\MarketPlace\src\main\java\co\edu\konrad\marketplace\logic\DatosFinancierosLogic.java
+C:\Users\Fenix\Documents\Development\NTD\MarketKOLO\MarketPlace\src\main\java\co\edu\konrad\marketplace\entities\ProductoEntity.java
+C:\Users\Fenix\Documents\Development\NTD\MarketKOLO\MarketPlace\src\main\java\co\edu\konrad\marketplace\dto\FacturaDTO.java
+C:\Users\Fenix\Documents\Development\NTD\MarketKOLO\MarketPlace\src\main\java\co\edu\konrad\marketplace\entities\ComunicacionEntity.java
+C:\Users\Fenix\Documents\Development\NTD\MarketKOLO\MarketPlace\src\main\java\co\edu\konrad\marketplace\persistence\DatosFinancierosPersistence.java
+C:\Users\Fenix\Documents\Development\NTD\MarketKOLO\MarketPlace\src\main\java\co\edu\konrad\marketplace\persistence\EvaluacionPersistence.java
+C:\Users\Fenix\Documents\Development\NTD\MarketKOLO\MarketPlace\src\main\java\co\edu\konrad\marketplace\resources\ProveedorResource.java
+C:\Users\Fenix\Documents\Development\NTD\MarketKOLO\MarketPlace\src\main\java\co\edu\konrad\marketplace\entities\ClienteEntity.java
+C:\Users\Fenix\Documents\Development\NTD\MarketKOLO\MarketPlace\src\main\java\co\edu\konrad\marketplace\logic\CiudadLogic.java
+C:\Users\Fenix\Documents\Development\NTD\MarketKOLO\MarketPlace\src\main\java\co\edu\konrad\marketplace\resources\DatosPagoResource.java
+C:\Users\Fenix\Documents\Development\NTD\MarketKOLO\MarketPlace\src\main\java\co\edu\konrad\marketplace\dto\ClienteDTO.java
+C:\Users\Fenix\Documents\Development\NTD\MarketKOLO\MarketPlace\src\main\java\co\edu\konrad\marketplace\dto\EvaluacionDTO.java
+C:\Users\Fenix\Documents\Development\NTD\MarketKOLO\MarketPlace\src\main\java\co\edu\konrad\marketplace\persistence\FacturaPersistence.java
+C:\Users\Fenix\Documents\Development\NTD\MarketKOLO\MarketPlace\src\main\java\co\edu\konrad\marketplace\entities\ProveedorEntity.java
+C:\Users\Fenix\Documents\Development\NTD\MarketKOLO\MarketPlace\src\main\java\co\edu\konrad\marketplace\dto\EnvioDTO.java
+C:\Users\Fenix\Documents\Development\NTD\MarketKOLO\MarketPlace\src\main\java\co\edu\konrad\marketplace\persistence\ComunicacionPersistence.java
+C:\Users\Fenix\Documents\Development\NTD\MarketKOLO\MarketPlace\src\main\java\co\edu\konrad\marketplace\persistence\TipoProductoPersistence.java
+C:\Users\Fenix\Documents\Development\NTD\MarketKOLO\MarketPlace\src\main\java\co\edu\konrad\marketplace\persistence\EnvioPersistence.java
+C:\Users\Fenix\Documents\Development\NTD\MarketKOLO\MarketPlace\src\main\java\co\edu\konrad\marketplace\logic\ClienteLogic.java
+C:\Users\Fenix\Documents\Development\NTD\MarketKOLO\MarketPlace\src\main\java\co\edu\konrad\marketplace\logic\ProveedorLogic.java
+C:\Users\Fenix\Documents\Development\NTD\MarketKOLO\MarketPlace\src\main\java\co\edu\konrad\marketplace\logic\TipoProductoLogic.java
+C:\Users\Fenix\Documents\Development\NTD\MarketKOLO\MarketPlace\src\main\java\co\edu\konrad\marketplace\resources\ComunicacionResource.java
+C:\Users\Fenix\Documents\Development\NTD\MarketKOLO\MarketPlace\src\main\java\co\edu\konrad\marketplace\dto\ProveedorDTO.java
+C:\Users\Fenix\Documents\Development\NTD\MarketKOLO\MarketPlace\src\main\java\co\edu\konrad\marketplace\dto\DatosPagoDTO.java
+C:\Users\Fenix\Documents\Development\NTD\MarketKOLO\MarketPlace\src\main\java\co\edu\konrad\marketplace\entities\ProveedorProductoEntity.java
+C:\Users\Fenix\Documents\Development\NTD\MarketKOLO\MarketPlace\src\main\java\co\edu\konrad\marketplace\logic\PaisLogic.java
+C:\Users\Fenix\Documents\Development\NTD\MarketKOLO\MarketPlace\src\main\java\co\edu\konrad\marketplace\persistence\ProveedorProductoPersistence.java
+C:\Users\Fenix\Documents\Development\NTD\MarketKOLO\MarketPlace\src\main\java\co\edu\konrad\marketplace\resources\PaisResource.java
+C:\Users\Fenix\Documents\Development\NTD\MarketKOLO\MarketPlace\src\main\java\co\edu\konrad\marketplace\resources\ApplicationConfig.java
+C:\Users\Fenix\Documents\Development\NTD\MarketKOLO\MarketPlace\src\main\java\co\edu\konrad\marketplace\resources\TipoPagoResource.java
+C:\Users\Fenix\Documents\Development\NTD\MarketKOLO\MarketPlace\src\main\java\co\edu\konrad\marketplace\entities\TipoProductoEntity.java
+C:\Users\Fenix\Documents\Development\NTD\MarketKOLO\MarketPlace\src\main\java\co\edu\konrad\marketplace\dto\DatosFinancierosDTO.java
+C:\Users\Fenix\Documents\Development\NTD\MarketKOLO\MarketPlace\src\main\java\co\edu\konrad\marketplace\logic\ProductoLogic.java
+C:\Users\Fenix\Documents\Development\NTD\MarketKOLO\MarketPlace\src\main\java\co\edu\konrad\marketplace\entities\FacturaEntity.java
+C:\Users\Fenix\Documents\Development\NTD\MarketKOLO\MarketPlace\src\main\java\co\edu\konrad\marketplace\resources\ClienteResource.java
+C:\Users\Fenix\Documents\Development\NTD\MarketKOLO\MarketPlace\src\main\java\co\edu\konrad\marketplace\resources\DatosFinancierosResource.java
