@@ -23,6 +23,8 @@
                 valorProducto.text(data[i].valorProducto);
                 var garantiaProducto = $('<td>');
                 garantiaProducto.text(data[i].garantiaProducto);
+                var imagenProducto = $('<td>');
+                imagenProducto.text(data[i].imagenProducto);
                 var tipoProducto = $('<td>');
                 tipoProducto.text(data[i].tipoProducto);
                 var acciones = $('<td>');
@@ -41,6 +43,7 @@
                 tableRow.append(marcaProducto);
                 tableRow.append(valorProducto);
                 tableRow.append(garantiaProducto);
+                tableRow.append(imagenProducto);
                 tableRow.append(tipoProducto);
 
                 tableRow.append(acciones);

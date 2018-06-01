@@ -28,6 +28,7 @@
             var marca = $('#trademark').val(data.marcaProducto);
             var valor = $('#price').val(data.valorProducto);
             var garantia = $('#warranty').val(data.garantiaProducto);
+            var imagen = $('#image').val(data.imagenProducto);
             var tipo = $('#typeProdCode').val(data.tipoProductoId);
             var id = data.idProducto;
 
@@ -36,6 +37,7 @@
                 var marca = $('#trademark').val();
                 var valor = $('#price').val();
                 var garantia = $('#warranty').val();
+                var imagen = $('#image').val();
                 var tipo = $('#typeProdCode').val();
 
                 $.ajax({
@@ -46,6 +48,7 @@
                         marcaProducto: marca,
                         valorProducto: valor,
                         garantiaProducto: garantia,
+                        imagenProducto: imagen,
                         tipoProducto: tipo,
                         idProducto: id
                     }),
@@ -66,6 +69,7 @@
             var marca = $('#trademark').val();
             var valor = $('#price').val();
             var garantia = $('#warranty').val();
+            var imagen = $('#image').val();
             var tipo = $('#typeProdCode').val();
             $.ajax({
                 url: '/MarketPlace/api/productos/',
@@ -75,6 +79,7 @@
                     marcaProducto: marca,
                     valorProducto: valor,
                     garantiaProducto: garantia,
+                    imagenProducto: imagen,
                     tipoProducto: tipo
                 }),
                 method: 'POST',
