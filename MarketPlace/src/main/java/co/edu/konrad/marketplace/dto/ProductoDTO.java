@@ -24,6 +24,8 @@ public class ProductoDTO {
     private int valorProducto;
 
     private int garantiaProducto;
+    
+    private String imagenProducto;
 
     private int tipoProducto;
 
@@ -37,6 +39,7 @@ public class ProductoDTO {
         producto.setMarcaProducto(this.marcaProducto);
         producto.setValorProducto(this.valorProducto);
         producto.setGarantiaProducto(this.garantiaProducto);
+        producto.setImagenProducto(this.imagenProducto);
         producto.setTipoProductoId(this.tipoProducto);
         return producto;
     }
@@ -47,6 +50,7 @@ public class ProductoDTO {
         this.marcaProducto = producto.getMarcaProducto();
         this.valorProducto = producto.getValorProducto();
         this.garantiaProducto = producto.getGarantiaProducto();
+        this.imagenProducto = producto.getImagenProducto();
         this.tipoProducto = producto.getTipoProductoId();
     }
     
@@ -104,5 +108,13 @@ public class ProductoDTO {
 
     public void setTipoProducto(int tipoProducto) {
         this.tipoProducto = tipoProducto;
+    }
+
+    public String getImagenProducto() {
+        return imagenProducto;
+    }
+
+    public void setImagenProducto(String imagenProducto) {
+        this.imagenProducto = imagenProducto;
     }
 }
