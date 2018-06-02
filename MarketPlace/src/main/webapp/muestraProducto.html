@@ -5,9 +5,10 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>MarketPlace KOLO</title>
-        <link rel="stylesheet" href="css/foundation.css">
         <link rel="stylesheet" href="css/app.css">
-        <script src="./js/vendor/jquery.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="css/foundation.css">
+        <script src="js/vendor/jquery.js"></script>
+        <script src="js/vendor/jquery.tmpl.js"></script>
     </head>
     <body>
 
@@ -148,42 +149,15 @@
                         </li>
                     </ul>
                 </div>
-                <div class="cell medium-6 large-5">
-                    <div>
-                        <h3 id="title1">Crear Proveedor</h3>
-                        <hr/>
-                        <div class="form-group">
-                            <label class="control-label">NIT Proveedor</label>
-                            <input class="form-control" id="nit" type="text" placeholder="Ingrese el NIT">
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label">Nombre Proveedor</label>
-                            <input class="form-control" id="name" type="text" placeholder="Ingrese el nombre">
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label">Usuario Proveedor</label>
-                            <input class="form-control" id="user" type="text" placeholder="Ingrese el usuario">
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label">Password Proveedor</label>
-                            <input class="form-control" id="pass" type="password" placeholder="Ingrese el password">
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label">Avatar Proveedor</label>
-                            <input class="form-control" id="avatar" type="text" placeholder="Ingrese la url del avatar">
-                        </div>
-                        <hr/>
-                        <button type="button" class="success button" id="botonCrear">Crear Proveedor</button>
+                <div class="cell medium-6 large-10">
+                    <div id="datapr" class="datap">
+                        
                     </div>
-                </div>
-                <div class="cell medium-6 large-5">
-                    <img src="https://http2.mlstatic.com/vendo-base-de-datos-de-proveedores-de-miami-D_NQ_NP_348121-MLC20713381019_052016-F.jpg">
                 </div>
             </div>
         </div>
-        <script src="./js/proveedor/crearProveedor.js" type="text/javascript"></script>
+        <script src="./js/producto/muestraProducto.js" type="text/javascript"></script>
 
-        <script src="js/vendor/jquery.js"></script>
         <script src="js/vendor/what-input.js"></script>
         <script src="js/vendor/foundation.js"></script>
         <script src="js/vendor/foundation.drilldown.js"></script>

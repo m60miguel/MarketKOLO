@@ -30,7 +30,7 @@
             var pass = $('#pass').val(data.passProveedor);
             var avatar = $('#avatar').val(data.avatarProveedor);
             var id = data.idProveedor;
-
+            $('#title1').text('Actualizar Proveedor: ' + data.nombreProveedor);
             $('#botonCrear').text('Actualizar Proveedor').click(function (event) {
                 var nit = $('#nit').val();
                 var nombre = $('#name').val();

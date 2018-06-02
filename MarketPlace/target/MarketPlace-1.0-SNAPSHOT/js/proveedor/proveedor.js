@@ -22,9 +22,8 @@
                 var usuarioProveedor = $('<td>');
                 usuarioProveedor.text(data[i].usuarioProveedor);
                 var passProveedor = $('<td>');
-                passProveedor.text(data[i].passProveedor);
-                var avatarProveedor = $('<td>');
-                avatarProveedor.text(data[i].avatarProveedor);
+                passProveedor.text('********');
+                var avatarProveedor = $('<td><img src="'+ data[i].avatarProveedor + '" height="100" width="100">');
                 var acciones = $('<td>');
                 
                 var botonEliminar = $('<button>').addClass('button alert');

@@ -9,11 +9,11 @@
         var divProducto = '<div class="column">' +
                 '<div class="product-card">' +
                 '<div class="product-card-thumbnail">' +
-                '<a href="#"><img src="${imagenProducto}" height="200" width="200"/></a>' +
+                '<a href="muestraProducto.html?id=${idProducto}"><img src="${imagenProducto}" height="200" width="200"/></a>' +
                 '</div>' +
-                '<h2 class="product-card-title"><a href="#">${nombreProducto}</a></h2>' +
+                '<h2 class="product-card-title"><a href="muestraProducto.html?id=${idProducto}">${nombreProducto}</a></h2>' +
                 '<span class="product-card-desc">${marcaProducto}</span>' +
-                '<span class="product-card-price">${valorProducto}</span><span class="product-card-sale">$12.99</span>' +
+                '<span class="product-card-price">${valorProducto}</span><span class="product-card-sale">no hay oferta</span>' +
                 '</div>' +
                 '</div>';
         $("#grid-products").empty();
@@ -45,7 +45,7 @@
                 $.template("divProducto", divProducto);
                 $.tmpl("divProducto", producto).appendTo(gridproducts);
                 counter = counter + 1;
-                if (counter == 4) {
+                if (counter === 4) {
                     gridproducts = $("#grid-products2");
                 }
             }).fail(function (xhr, status, error) {
@@ -55,8 +55,24 @@
             console.log(error);
         });
     });
-    function mod(n, m) {
-        return ((n % m) + m) % m;
-    }
+    $('#next').on('click', function () {
+        var pg = parseInt(sessionStorage.getItem("pagina")) + 1;
+        var allPg = parseInt(sessionStorage.getItem("numPaginas"));
+        if (pg > allPg) {
+            pg -= 1;
+        }
+        sessionStorage.setItem("pagina", pg);
+        this.href = "./index.html";
+
+    });
+    $('#back').on('click', function () {
+        var pg = parseInt(sessionStorage.getItem("pagina")) - 1;
+        if (pg < 1) {
+            pg = 1;
+        }
+        sessionStorage.setItem("pagina", pg);
+        this.href = "./index.html";
+
+    });
 })(jQuery);
         
