@@ -22,13 +22,11 @@
                 var valorProducto = $('<td>');
                 valorProducto.text(data[i].valorProducto);
                 var garantiaProducto = $('<td>');
-                garantiaProducto.text(data[i].garantiaProducto);
-                var imagenProducto = $('<td>');
-                imagenProducto.text(data[i].imagenProducto);
+                garantiaProducto.text(data[i].garantiaProducto + " meses");
+                var imagenProducto = $('<td><img src="'+ data[i].imagenProducto + '" height="100" width="100">');
                 var tipoProducto = $('<td>');
                 tipoProducto.text(data[i].tipoProducto);
                 var acciones = $('<td>');
-                
                 var botonEliminar = $('<button>').addClass('button alert');
                 botonEliminar.text('Eliminar').attr('data-id', data[i].idProducto);
                 botonEliminar.click(eliminar);

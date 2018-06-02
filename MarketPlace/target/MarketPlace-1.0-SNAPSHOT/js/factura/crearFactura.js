@@ -24,7 +24,7 @@
             method: 'GET',
             dataType: 'json'
         }).done(function (data) {
-            var cliente = $('#nameCode').val(data.clienteId);
+            var cliente = $('#idCode').val(data.clienteId);
             var producto = $('#prodCode').val(data.productoId);
             var canCompra = $('#quantity').val(data.cantidadCompra);
             var fecCompra = $('#date').val(data.fechaCompra);
@@ -90,9 +90,8 @@
     }).done(function (data) {
         console.log(data);
         for (var i = 0; i < data.length; i++) {
-            /*<option value="">Seleccione Proveedor</option>    */
-            var options = '<option value="' + data[i].idCliente + '">' + data[i].nombreCliente + '</option>';
-            $('#nameCode').append(options);
+            var options = '<option value="' + data[i].idCliente + '">' + data[i].nDocCliente + '</option>';
+            $('#idCode').append(options);
         }
     }).fail(function (xhr, status, error) {
         console.log(error);

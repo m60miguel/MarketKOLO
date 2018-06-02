@@ -22,11 +22,11 @@
                 var valorProducto = $('<td>');
                 valorProducto.text(data[i].valorProducto);
                 var garantiaProducto = $('<td>');
-                garantiaProducto.text(data[i].garantiaProducto);
+                garantiaProducto.text(data[i].garantiaProducto + " meses");
+                var imagenProducto = $('<td><img src="'+ data[i].imagenProducto + '" height="100" width="100">');
                 var tipoProducto = $('<td>');
                 tipoProducto.text(data[i].tipoProducto);
                 var acciones = $('<td>');
-                
                 var botonEliminar = $('<button>').addClass('button alert');
                 botonEliminar.text('Eliminar').attr('data-id', data[i].idProducto);
                 botonEliminar.click(eliminar);
@@ -41,6 +41,7 @@
                 tableRow.append(marcaProducto);
                 tableRow.append(valorProducto);
                 tableRow.append(garantiaProducto);
+                tableRow.append(imagenProducto);
                 tableRow.append(tipoProducto);
 
                 tableRow.append(acciones);

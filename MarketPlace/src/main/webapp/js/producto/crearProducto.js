@@ -31,7 +31,7 @@
             var imagen = $('#image').val(data.imagenProducto);
             var tipo = $('#typeProdCode').val(data.tipoProductoId);
             var id = data.idProducto;
-
+            $('#title1').text('Actualizar Producto: ' + data.nombreProducto);
             $('#botonCrear').text('Actualizar Producto').click(function (event) {
                 var nombre = $('#name').val();
                 var marca = $('#trademark').val();
@@ -90,7 +90,8 @@
                 console.log(error);
             });
         });
-    };
+    }
+    ;
     $.ajax({
         url: '/MarketPlace/api/tiposproducto',
         contentType: 'application/json',

@@ -9,7 +9,7 @@
         var divProducto = '<div class="column">' +
                 '<div class="product-card">' +
                 '<div class="product-card-thumbnail">' +
-                '<a href="#"><img src="https://placehold.it/180x180"/></a>' +
+                '<a href="#"><img src="${imagenProducto}" height="200" width="200"/></a>' +
                 '</div>' +
                 '<h2 class="product-card-title"><a href="#">${nombreProducto}</a></h2>' +
                 '<span class="product-card-desc">${marcaProducto}</span>' +
@@ -25,7 +25,7 @@
         }).done(function (data) {
             console.log(data);
             var dataProductos = new Array();
-            var rango = Math.floor((data.length - 1) / 9);
+            var rango = Math.floor((data.length - 1) / 8);
             sessionStorage.setItem("numPaginas", rango + 1);
             var pagina = parseInt(sessionStorage.getItem("pagina"));
             var allPag = rango + 1;
@@ -33,16 +33,21 @@
             document.getElementById("totalPaginas").innerHTML = allPag;
             document.getElementById("numPg").innerHTML = sessionStorage.getItem("pagina");
             sessionStorage.setItem("numPaginas", allPag);
-            var max = ((pagina - 1) * 9)
-            for (var i = max; i < (9 + max); i++) {
+            var max = ((pagina - 1) * 8)
+            for (var i = max; i < (8 + max); i++) {
                 if (i < data.length) {
                     dataProductos.push(data[i]);
                 }
             }
+            var gridproducts = $("#grid-products1");
+            var counter = 0;
             $.each(dataProductos, function (index, producto) {
                 $.template("divProducto", divProducto);
-                $.tmpl("divProducto", producto).appendTo("#grid-products");
-
+                $.tmpl("divProducto", producto).appendTo(gridproducts);
+                counter = counter + 1;
+                if (counter == 4) {
+                    gridproducts = $("#grid-products2");
+                }
             }).fail(function (xhr, status, error) {
                 console.log(error);
             });
@@ -50,5 +55,8 @@
             console.log(error);
         });
     });
+    function mod(n, m) {
+        return ((n % m) + m) % m;
+    }
 })(jQuery);
         
