@@ -5,7 +5,10 @@
         <title>Iniciar Sesi&oacute;n - MarketPlace KOLO</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
+
+        <script src="js/vendor/jquery.js"></script>
+        <script src="js/vendor/jquery.tmpl.js"></script>
+
         <link rel="stylesheet" href="./css/motion-ui.css" type="text/css"/>
         <link rel="stylesheet" href="./css/app.css" type="text/css"/>
         <link rel="stylesheet" href="./css/foundation.css" type="text/css"/>
@@ -18,16 +21,19 @@
                 <form class="log-in-form">
                     <h4 class="text-center">Inicia sesi&oacute;n con tu e-mail</h4>
                     <label>E-mail
-                        <input type="email" placeholder="somebody@example.com">
+                        <input id="usuario" type="email" placeholder="somebody@example.com">
                     </label>
                     <label>Contraseña
-                        <input type="password" placeholder="Password">
+                        <input id="password" type="password" placeholder="Password">
                     </label>
                     <input id="show-password" type="checkbox"><label for="show-password">Mostrar contraseña</label>
-                    <p><input type="submit" class="button expanded" value="Ingresar"></p>
+                    <p><input type="submit" id="submit" class="button expanded" value="Ingresar"></p>
                     <p class="text-center"><a href="#">¿Olvidaste tu contraseña?</a></p>
                 </form>
             </div>
         </div>
+        
+        <script src="./js/proveedor/login.js" type="text/javascript"></script>
+        
     </body>
 </html>

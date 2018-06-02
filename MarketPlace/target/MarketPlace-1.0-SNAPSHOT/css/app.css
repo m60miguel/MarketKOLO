@@ -267,6 +267,10 @@
     overflow-y: scroll;
 }
 
+.megadivh{
+    overflow-x: scroll;
+}
+
 .datap{
     width: 100%;
     height: 80%;

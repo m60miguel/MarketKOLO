@@ -13,7 +13,7 @@
                 '</div>' +
                 '<h2 class="product-card-title"><a href="muestraProducto.html?id=${idProducto}">${nombreProducto}</a></h2>' +
                 '<span class="product-card-desc">${marcaProducto}</span>' +
-                '<span class="product-card-price">${valorProducto}</span><span class="product-card-sale">no hay oferta</span>' +
+                '<span class="product-card-price" >$ ${valorProducto}</span><span class="product-card-sale">no hay oferta</span>' +
                 '</div>' +
                 '</div>';
         $("#grid-products").empty();

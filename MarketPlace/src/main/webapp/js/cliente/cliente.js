@@ -3,16 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-(function ($){
-    $(document).ready(function (event){
+(function ($) {
+    $(document).ready(function (event) {
         $.ajax({
             url: '/MarketPlace/api/clientes',
             contentType: 'application/json',
             method: 'GET',
             dataType: 'json'
-        }).done(function(data) {
+        }).done(function (data) {
             console.log(data);
-            for(var i=0; i<data.length; i++){
+            for (var i = 0; i < data.length; i++) {
                 var tableRow = $('<tr>');
                 //<td>: Cada division de la tabla
                 var nombreCliente = $('<td>');
@@ -28,29 +28,28 @@
                 var usuarioCliente = $('<td>');
                 usuarioCliente.text(data[i].usuarioCliente);
                 var passCliente = $('<td>');
-                passCliente.text(data[i].passCliente);
+                passCliente.text('******');
                 var direccionCliente = $('<td>');
                 direccionCliente.text(data[i].direccionCliente);
                 var telefonoCliente = $('<td>');
                 telefonoCliente.text(data[i].telefonoCliente);
                 var emailCliente = $('<td>');
                 emailCliente.text(data[i].emailCliente);
-                var avatarCliente = $('<td>');
-                avatarCliente.text(data[i].avatarCliente);
+                var avatarCliente = $('<td><img src="' + data[i].avatarCliente + '" height="100" width="100">');
                 var ciudad = $('<td>');
                 ciudad.text(data[i].ciudad);
                 var acciones = $('<td>');
-                
+
                 var botonEliminar = $('<button>').addClass('button alert');
                 botonEliminar.text('Eliminar').attr('data-id', data[i].idCliente);
                 botonEliminar.click(eliminar);
-                
-                var botonActualizar = $('<a href="/MarketPlace/crearCliente.html?id='+data[i].idCliente+'">').addClass('button success');
+
+                var botonActualizar = $('<a href="/MarketPlace/crearCliente.html?id=' + data[i].idCliente + '">').addClass('button success');
                 botonActualizar.text('Actualizar');
-                
+
                 acciones.append(botonActualizar);
                 acciones.append(botonEliminar);
-                
+
                 tableRow.append(nombreCliente);
                 tableRow.append(apellidoCliente);
                 tableRow.append(tDocCliente);
@@ -63,28 +62,28 @@
                 tableRow.append(usuarioCliente);
                 tableRow.append(passCliente);
                 tableRow.append(avatarCliente);
-                
+
                 tableRow.append(acciones);
 
                 tableRow.append(acciones);
 
                 $('#tablaClientes table tbody').append(tableRow);
             }
-        }).fail(function (xhr, status, error){
-           console.log(error);
+        }).fail(function (xhr, status, error) {
+            console.log(error);
         });
     });
-    
-    function eliminar(event){
+
+    function eliminar(event) {
         $.ajax({
-            url: '/MarketPlace/api/clientes/'+$(this).attr('data-id'),
+            url: '/MarketPlace/api/clientes/' + $(this).attr('data-id'),
             contentType: 'application/json',
             method: 'DELETE',
             dataType: 'json'
-        }).done(function (data){
+        }).done(function (data) {
             console.log("Elemento Eliminado");
             window.location.reload();
-        }).fail(function (xhr, status, error){
+        }).fail(function (xhr, status, error) {
             console.log("Error");
         });
     }
